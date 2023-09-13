@@ -1,0 +1,1190 @@
+[2023-09-13 02:00:00.015 +08:00] [INF] [165] Emby.Server.Implementations.ScheduledTasks.TaskManager: "DailyTrigger" fired for task: "Extract Chapter Images"
+[2023-09-13 02:00:00.016 +08:00] [INF] [165] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "ChapterImagesTask"
+[2023-09-13 02:00:00.017 +08:00] [INF] [88] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Extract Chapter Images"
+[2023-09-13 02:00:00.044 +08:00] [INF] [88] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Extract Chapter Images" Completed after 0 minute(s) and 0 seconds
+[2023-09-13 02:00:00.047 +08:00] [INF] [88] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-09-13 02:00:01.023 +08:00] [INF] [88] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Extract Chapter Images" set to fire at 2023-09-14 02:00:00.000 +08:00, which is 23:59:58.9772726 from now.
+[2023-09-13 06:27:37.064 +08:00] [INF] [269] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Scan Media Library"
+[2023-09-13 06:27:37.064 +08:00] [INF] [269] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "RefreshMediaLibraryTask"
+[2023-09-13 06:27:37.064 +08:00] [INF] [269] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Scan Media Library"
+[2023-09-13 06:27:37.064 +08:00] [INF] [269] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/data/movies"
+[2023-09-13 06:27:37.065 +08:00] [INF] [269] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/data/tvshows"
+[2023-09-13 06:27:37.069 +08:00] [INF] [269] Emby.Server.Implementations.Library.LibraryManager: Validating media library
+[2023-09-13 06:27:37.236 +08:00] [ERR] [244] Emby.Server.Implementations.Library.LibraryManager: Error running post-scan task
+System.ArgumentException: Not enough valid pictures provided to create a splashscreen!
+   at Jellyfin.Drawing.Skia.SplashscreenBuilder.GenerateCollage(IReadOnlyList`1 posters, IReadOnlyList`1 backdrops)
+   at Jellyfin.Drawing.Skia.SplashscreenBuilder.GenerateSplash(IReadOnlyList`1 posters, IReadOnlyList`1 backdrops, String outputPath)
+   at Jellyfin.Drawing.Skia.SkiaEncoder.CreateSplashscreen(IReadOnlyList`1 posters, IReadOnlyList`1 backdrops)
+   at Emby.Server.Implementations.Library.SplashscreenPostScanTask.Run(IProgress`1 progress, CancellationToken cancellationToken)
+   at Emby.Server.Implementations.Library.LibraryManager.RunPostScanTasks(IProgress`1 progress, CancellationToken cancellationToken)
+[2023-09-13 06:27:37.259 +08:00] [INF] [244] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Scan Media Library" Completed after 0 minute(s) and 0 seconds
+[2023-09-13 06:27:37.262 +08:00] [INF] [167] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/data/movies"
+[2023-09-13 06:27:37.262 +08:00] [INF] [243] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/data/tvshows"
+[2023-09-13 06:27:37.268 +08:00] [INF] [244] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-09-13 18:05:13.231 +08:00] [INF] [2] Main: Received a SIGTERM signal, shutting down
+[2023-09-13 18:05:13.241 +08:00] [INF] [2] Main: Running query planner optimizations in the database... This might take a while
+[2023-09-13 18:05:13.357 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "CoreAppHost"
+[2023-09-13 18:05:13.358 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EntryPoint"
+[2023-09-13 18:05:13.359 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EntryPoint"
+[2023-09-13 18:05:13.359 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "UserDataChangeNotifier"
+[2023-09-13 18:05:13.360 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "MusicBrainzAlbumProvider"
+[2023-09-13 18:05:13.361 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "ExternalPortForwarding"
+[2023-09-13 18:05:13.363 +08:00] [INF] [2] Emby.Server.Implementations.EntryPoints.ExternalPortForwarding: Stopping NAT discovery
+[2023-09-13 18:05:13.370 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "LibraryChangedNotifier"
+[2023-09-13 18:05:13.371 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "RecordingNotifier"
+[2023-09-13 18:05:13.372 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "DeviceAccessEntryPoint"
+[2023-09-13 18:05:13.373 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "SchedulesDirect"
+[2023-09-13 18:05:13.373 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EmbyTV"
+[2023-09-13 18:05:13.375 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "NotificationEntryPoint"
+[2023-09-13 18:05:13.378 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "LibraryMonitorStartup"
+[2023-09-13 18:05:13.378 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "UdpServerEntryPoint"
+[2023-09-13 18:05:13.381 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "DlnaEntryPoint"
+[2023-09-13 18:05:13.402 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing PlayToManager
+[2023-09-13 18:05:13.403 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing DeviceDiscovery
+[2023-09-13 18:05:13.412 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing SsdpCommunicationsServer
+[2023-09-13 18:05:13.412 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing _BroadcastListenSocket
+[2023-09-13 18:05:13.569 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" Disposing 3 sendSockets
+[2023-09-13 18:05:13.571 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "0.0.0.0"
+[2023-09-13 18:05:13.639 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "172.26.0.4"
+[2023-09-13 18:05:13.679 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "127.0.0.1"
+[2023-09-13 18:05:34.928 +08:00] [INF] [1] Main: Jellyfin version: "10.8.10"
+[2023-09-13 18:05:35.017 +08:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_PublishedServerUrl, 192.168.50.111/jellyfin]", "[JELLYFIN_CONFIG_DIR, /config]"]
+[2023-09-13 18:05:35.019 +08:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2023-09-13 18:05:35.034 +08:00] [INF] [1] Main: Operating system: "Linux"
+[2023-09-13 18:05:35.034 +08:00] [INF] [1] Main: Architecture: X64
+[2023-09-13 18:05:35.035 +08:00] [INF] [1] Main: 64-Bit Process: True
+[2023-09-13 18:05:35.035 +08:00] [INF] [1] Main: User Interactive: True
+[2023-09-13 18:05:35.035 +08:00] [INF] [1] Main: Processor count: 6
+[2023-09-13 18:05:35.035 +08:00] [INF] [1] Main: Program data path: "/config/data"
+[2023-09-13 18:05:35.035 +08:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2023-09-13 18:05:35.035 +08:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2023-09-13 18:05:35.468 +08:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2023-09-13 18:05:35.507 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2023-09-13 18:05:35.722 +08:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-09-13 18:05:35.722 +08:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2023-09-13 18:05:35.723 +08:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-09-13 18:05:35.730 +08:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2023-09-13 18:05:35.730 +08:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2023-09-13 18:05:38.813 +08:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "TMDb" "10.8.10.0"
+[2023-09-13 18:05:38.815 +08:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "Studio Images" "10.8.10.0"
+[2023-09-13 18:05:38.817 +08:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "OMDb" "10.8.10.0"
+[2023-09-13 18:05:38.818 +08:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "MusicBrainz" "10.8.10.0"
+[2023-09-13 18:05:38.819 +08:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "AudioDB" "10.8.10.0"
+[2023-09-13 18:05:38.971 +08:00] [INF] [1] Main: Kestrel listening on "Any IP4 Address"
+[2023-09-13 18:05:39.221 +08:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.Repositories.EphemeralXmlRepository: Using an in-memory repository. Keys will not be persisted to storage.
+[2023-09-13 18:05:39.222 +08:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+[2023-09-13 18:05:39.645 +08:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: No XML encryptor configured. Key {11302620-ce06-496c-9ea2-8e77b4da6bc1} may be persisted to storage in unencrypted form.
+[2023-09-13 18:05:39.695 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Running startup tasks
+[2023-09-13 18:05:39.779 +08:00] [INF] [1] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Extract Chapter Images" set to fire at 2023-09-14 02:00:00.000 +08:00, which is 07:54:20.2211265 from now.
+[2023-09-13 18:05:40.086 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Found ffmpeg version "5.1.3"
+[2023-09-13 18:05:40.166 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "decoders": ["libdav1d", "av1", "av1_cuvid", "av1_qsv", "h264", "h264_qsv", "h264_cuvid", "hevc", "hevc_qsv", "hevc_cuvid", "mpeg2video", "mpeg2_qsv", "mpeg2_cuvid", "mpeg4", "mpeg4_cuvid", "msmpeg4", "vc1_qsv", "vc1_cuvid", "vp8", "libvpx", "vp8_cuvid", "vp8_qsv", "vp9", "libvpx-vp9", "vp9_cuvid", "vp9_qsv", "aac", "ac3", "dca", "flac", "mp3", "truehd"]
+[2023-09-13 18:05:40.182 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "encoders": ["libx264", "h264_amf", "h264_nvenc", "h264_qsv", "h264_v4l2m2m", "h264_vaapi", "libx265", "hevc_amf", "hevc_nvenc", "hevc_qsv", "hevc_vaapi", "mpeg4", "msmpeg4", "libvpx", "libvpx-vp9", "aac", "libfdk_aac", "ac3", "dca", "flac", "libmp3lame", "libopus", "truehd", "libvorbis", "srt"]
+[2023-09-13 18:05:40.208 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available filters: ["deinterlace_qsv", "deinterlace_vaapi", "hwupload_cuda", "hwupload_vaapi", "overlay_opencl", "overlay_qsv", "overlay_vaapi", "overlay_cuda", "procamp_vaapi", "scale_cuda", "scale_opencl", "scale_qsv", "scale_vaapi", "tonemap_cuda", "tonemap_opencl", "tonemap_vaapi", "vpp_qsv", "yadif_cuda", "zscale", "alphasrc"]
+[2023-09-13 18:05:40.320 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available hwaccel types: ["cuda", "vaapi", "qsv", "drm", "opencl", "vulkan"]
+[2023-09-13 18:05:40.708 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: FFmpeg: "/usr/lib/jellyfin-ffmpeg/ffmpeg"
+[2023-09-13 18:05:40.715 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: ServerId: "3881f2680ff141aa8af3ef3029090613"
+[2023-09-13 18:05:41.051 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Executed all pre-startup entry points in 0:00:00.3245745
+[2023-09-13 18:05:41.051 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Core startup complete
+[2023-09-13 18:05:41.255 +08:00] [WRN] [8] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"AccessSchedule"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:05:41.257 +08:00] [WRN] [8] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ActivityLog"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:05:41.257 +08:00] [WRN] [8] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"CustomItemDisplayPreferences"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:05:41.257 +08:00] [WRN] [8] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"DisplayPreferences"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:05:41.257 +08:00] [WRN] [8] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"HomeSection"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:05:41.258 +08:00] [WRN] [8] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ImageInfo"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:05:41.258 +08:00] [WRN] [8] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ItemDisplayPreferences"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:05:41.258 +08:00] [WRN] [8] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"Permission"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:05:41.258 +08:00] [WRN] [8] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"Preference"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:05:41.258 +08:00] [WRN] [8] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ApiKey"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:05:41.259 +08:00] [WRN] [8] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"Device"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:05:41.259 +08:00] [WRN] [8] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"DeviceOptions"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:05:41.259 +08:00] [WRN] [8] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"User"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:05:41.303 +08:00] [WRN] [8] Jellyfin.Server.Middleware.ResponseTimeMiddleware: Slow HTTP Response from "http://localhost:8096/health" to "127.0.0.1" in 0:00:00.730202 with Status Code 200
+[2023-09-13 18:05:41.467 +08:00] [INF] [8] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/data/movies"
+[2023-09-13 18:05:41.472 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Executed all post-startup entry points in 0:00:00.4205297
+[2023-09-13 18:05:41.472 +08:00] [INF] [1] Main: Startup complete 0:00:06.8836869
+[2023-09-13 18:05:41.478 +08:00] [INF] [18] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/data/tvshows"
+[2023-09-13 18:05:42.800 +08:00] [INF] [18] Emby.Server.Implementations.ScheduledTasks.TaskManager: "StartupTrigger" fired for task: "Update Plugins"
+[2023-09-13 18:05:42.801 +08:00] [INF] [18] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "PluginUpdateTask"
+[2023-09-13 18:05:42.804 +08:00] [INF] [18] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Update Plugins"
+[2023-09-13 18:05:44.276 +08:00] [INF] [8] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 1 seconds
+[2023-09-13 18:05:44.285 +08:00] [INF] [8] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-09-13 18:08:22.953 +08:00] [INF] [1] Main: Jellyfin version: "10.8.10"
+[2023-09-13 18:08:23.060 +08:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_PublishedServerUrl, 192.168.50.111/jellyfin]", "[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]", "[JELLYFIN_LOG_DIR, /config/log]"]
+[2023-09-13 18:08:23.064 +08:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2023-09-13 18:08:23.065 +08:00] [INF] [1] Main: Operating system: "Linux"
+[2023-09-13 18:08:23.065 +08:00] [INF] [1] Main: Architecture: X64
+[2023-09-13 18:08:23.066 +08:00] [INF] [1] Main: 64-Bit Process: True
+[2023-09-13 18:08:23.066 +08:00] [INF] [1] Main: User Interactive: True
+[2023-09-13 18:08:23.066 +08:00] [INF] [1] Main: Processor count: 6
+[2023-09-13 18:08:23.066 +08:00] [INF] [1] Main: Program data path: "/config/data"
+[2023-09-13 18:08:23.066 +08:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2023-09-13 18:08:23.066 +08:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2023-09-13 18:08:23.822 +08:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2023-09-13 18:08:23.885 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2023-09-13 18:08:24.234 +08:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-09-13 18:08:24.246 +08:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2023-09-13 18:08:24.248 +08:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-09-13 18:08:24.268 +08:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2023-09-13 18:08:24.270 +08:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2023-09-13 18:08:27.581 +08:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "TMDb" "10.8.10.0"
+[2023-09-13 18:08:27.582 +08:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "Studio Images" "10.8.10.0"
+[2023-09-13 18:08:27.583 +08:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "OMDb" "10.8.10.0"
+[2023-09-13 18:08:27.584 +08:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "MusicBrainz" "10.8.10.0"
+[2023-09-13 18:08:27.584 +08:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "AudioDB" "10.8.10.0"
+[2023-09-13 18:08:27.773 +08:00] [INF] [1] Main: Kestrel listening on "Any IP4 Address"
+[2023-09-13 18:08:27.965 +08:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.Repositories.EphemeralXmlRepository: Using an in-memory repository. Keys will not be persisted to storage.
+[2023-09-13 18:08:27.983 +08:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+[2023-09-13 18:08:28.584 +08:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: No XML encryptor configured. Key {aad59330-59d7-4715-9513-d10e776dda9c} may be persisted to storage in unencrypted form.
+[2023-09-13 18:08:28.652 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Running startup tasks
+[2023-09-13 18:08:28.759 +08:00] [INF] [1] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Extract Chapter Images" set to fire at 2023-09-14 02:00:00.000 +08:00, which is 07:51:31.2407223 from now.
+[2023-09-13 18:08:29.140 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Found ffmpeg version "5.1.3"
+[2023-09-13 18:08:29.282 +08:00] [WRN] [12] Jellyfin.Server.Middleware.ResponseTimeMiddleware: Slow HTTP Response from "http://localhost:8096/health" to "127.0.0.1" in 0:00:00.5072539 with Status Code 503
+[2023-09-13 18:08:29.306 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "decoders": ["libdav1d", "av1", "av1_cuvid", "av1_qsv", "h264", "h264_qsv", "h264_cuvid", "hevc", "hevc_qsv", "hevc_cuvid", "mpeg2video", "mpeg2_qsv", "mpeg2_cuvid", "mpeg4", "mpeg4_cuvid", "msmpeg4", "vc1_qsv", "vc1_cuvid", "vp8", "libvpx", "vp8_cuvid", "vp8_qsv", "vp9", "libvpx-vp9", "vp9_cuvid", "vp9_qsv", "aac", "ac3", "dca", "flac", "mp3", "truehd"]
+[2023-09-13 18:08:29.350 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "encoders": ["libx264", "h264_amf", "h264_nvenc", "h264_qsv", "h264_v4l2m2m", "h264_vaapi", "libx265", "hevc_amf", "hevc_nvenc", "hevc_qsv", "hevc_vaapi", "mpeg4", "msmpeg4", "libvpx", "libvpx-vp9", "aac", "libfdk_aac", "ac3", "dca", "flac", "libmp3lame", "libopus", "truehd", "libvorbis", "srt"]
+[2023-09-13 18:08:29.386 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available filters: ["deinterlace_qsv", "deinterlace_vaapi", "hwupload_cuda", "hwupload_vaapi", "overlay_opencl", "overlay_qsv", "overlay_vaapi", "overlay_cuda", "procamp_vaapi", "scale_cuda", "scale_opencl", "scale_qsv", "scale_vaapi", "tonemap_cuda", "tonemap_opencl", "tonemap_vaapi", "vpp_qsv", "yadif_cuda", "zscale", "alphasrc"]
+[2023-09-13 18:08:29.539 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available hwaccel types: ["cuda", "vaapi", "qsv", "drm", "opencl", "vulkan"]
+[2023-09-13 18:08:29.990 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: FFmpeg: "/usr/lib/jellyfin-ffmpeg/ffmpeg"
+[2023-09-13 18:08:29.992 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: ServerId: "3881f2680ff141aa8af3ef3029090613"
+[2023-09-13 18:08:30.370 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Executed all pre-startup entry points in 0:00:00.259456
+[2023-09-13 18:08:30.376 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Core startup complete
+[2023-09-13 18:08:30.593 +08:00] [INF] [12] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/data/tvshows"
+[2023-09-13 18:08:30.603 +08:00] [INF] [19] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/data/movies"
+[2023-09-13 18:08:30.621 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Executed all post-startup entry points in 0:00:00.2440695
+[2023-09-13 18:08:30.622 +08:00] [INF] [1] Main: Startup complete 0:00:08.0199248
+[2023-09-13 18:08:31.605 +08:00] [WRN] [8] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"AccessSchedule"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:08:31.605 +08:00] [WRN] [8] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ActivityLog"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:08:31.605 +08:00] [WRN] [8] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"CustomItemDisplayPreferences"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:08:31.605 +08:00] [WRN] [8] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"DisplayPreferences"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:08:31.605 +08:00] [WRN] [8] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"HomeSection"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:08:31.605 +08:00] [WRN] [8] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ImageInfo"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:08:31.605 +08:00] [WRN] [8] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ItemDisplayPreferences"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:08:31.605 +08:00] [WRN] [8] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"Permission"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:08:31.605 +08:00] [WRN] [8] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"Preference"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:08:31.605 +08:00] [WRN] [8] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ApiKey"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:08:31.605 +08:00] [WRN] [8] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"Device"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:08:31.605 +08:00] [WRN] [8] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"DeviceOptions"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:08:31.605 +08:00] [WRN] [8] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"User"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:08:31.790 +08:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: "StartupTrigger" fired for task: "Update Plugins"
+[2023-09-13 18:08:31.791 +08:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "PluginUpdateTask"
+[2023-09-13 18:08:31.797 +08:00] [INF] [19] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Update Plugins"
+[2023-09-13 18:08:33.586 +08:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 1 seconds
+[2023-09-13 18:08:33.596 +08:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-09-13 18:27:08.527 +08:00] [INF] [83] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "192.168.50.50" request
+[2023-09-13 18:27:37.260 +08:00] [INF] [69] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Scan Media Library"
+[2023-09-13 18:27:37.260 +08:00] [INF] [69] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "RefreshMediaLibraryTask"
+[2023-09-13 18:27:37.261 +08:00] [INF] [83] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Scan Media Library"
+[2023-09-13 18:27:37.262 +08:00] [INF] [83] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/data/tvshows"
+[2023-09-13 18:27:37.263 +08:00] [INF] [83] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/data/movies"
+[2023-09-13 18:27:37.264 +08:00] [INF] [83] Emby.Server.Implementations.Library.LibraryManager: Validating media library
+[2023-09-13 18:27:37.327 +08:00] [ERR] [83] Emby.Server.Implementations.Library.LibraryManager: Error in GetFilteredFileSystemEntries isPhysicalRoot: False IsVf: False
+System.IO.IOException: Stale file handle : '/data/tvshows'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.FileSystemInfos(String directory, String expression, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.DirectoryInfo.InternalEnumerateInfos(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.DirectoryInfo.EnumerateFileSystemInfos(String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFileSystemEntries(String path, Boolean recursive)
+   at MediaBrowser.Controller.Providers.DirectoryService.<>c.<GetFileSystemEntries>b__5_0(String p, IFileSystem fileSystem)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd[TArg](TKey key, Func`3 valueFactory, TArg factoryArgument)
+   at MediaBrowser.Controller.Providers.DirectoryService.GetFileSystemEntries(String path)
+   at MediaBrowser.Controller.IO.FileData.GetFilteredFileSystemEntries(IDirectoryService directoryService, String path, IFileSystem fileSystem, IServerApplicationHost appHost, ILogger logger, ItemResolveArgs args, Int32 flattenFolderDepth, Boolean resolveShortcuts)
+   at Emby.Server.Implementations.Library.LibraryManager.ResolvePath(FileSystemMetadata fileInfo, IDirectoryService directoryService, IItemResolver[] resolvers, Folder parent, String collectionType, LibraryOptions libraryOptions)
+[2023-09-13 18:27:37.340 +08:00] [ERR] [83] Emby.Server.Implementations.Library.LibraryManager: Error in "PlaylistResolver" resolving "/data/tvshows"
+System.IO.IOException: Stale file handle : '/data/tvshows'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.UserFiles(String directory, String expression, EnumerationOptions options)
+   at System.IO.Directory.InternalEnumeratePaths(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.Directory.EnumerateFiles(String path, String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.Library.Resolvers.PlaylistResolver.Resolve(ItemResolveArgs args)
+   at Emby.Server.Implementations.Library.Resolvers.ItemResolver`1.MediaBrowser.Controller.Resolvers.IItemResolver.ResolvePath(ItemResolveArgs args)
+   at Emby.Server.Implementations.Library.LibraryManager.Resolve(ItemResolveArgs args, IItemResolver resolver)
+[2023-09-13 18:27:37.450 +08:00] [ERR] [83] Emby.Server.Implementations.Library.LibraryManager: Error in GetFilteredFileSystemEntries isPhysicalRoot: False IsVf: False
+System.IO.IOException: Stale file handle : '/data/movies'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.FileSystemInfos(String directory, String expression, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.DirectoryInfo.InternalEnumerateInfos(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.DirectoryInfo.EnumerateFileSystemInfos(String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFileSystemEntries(String path, Boolean recursive)
+   at MediaBrowser.Controller.Providers.DirectoryService.<>c.<GetFileSystemEntries>b__5_0(String p, IFileSystem fileSystem)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd[TArg](TKey key, Func`3 valueFactory, TArg factoryArgument)
+   at MediaBrowser.Controller.Providers.DirectoryService.GetFileSystemEntries(String path)
+   at MediaBrowser.Controller.IO.FileData.GetFilteredFileSystemEntries(IDirectoryService directoryService, String path, IFileSystem fileSystem, IServerApplicationHost appHost, ILogger logger, ItemResolveArgs args, Int32 flattenFolderDepth, Boolean resolveShortcuts)
+   at Emby.Server.Implementations.Library.LibraryManager.ResolvePath(FileSystemMetadata fileInfo, IDirectoryService directoryService, IItemResolver[] resolvers, Folder parent, String collectionType, LibraryOptions libraryOptions)
+[2023-09-13 18:27:37.451 +08:00] [ERR] [83] Emby.Server.Implementations.Library.LibraryManager: Error in "PlaylistResolver" resolving "/data/movies"
+System.IO.IOException: Stale file handle : '/data/movies'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.UserFiles(String directory, String expression, EnumerationOptions options)
+   at System.IO.Directory.InternalEnumeratePaths(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.Directory.EnumerateFiles(String path, String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.Library.Resolvers.PlaylistResolver.Resolve(ItemResolveArgs args)
+   at Emby.Server.Implementations.Library.Resolvers.ItemResolver`1.MediaBrowser.Controller.Resolvers.IItemResolver.ResolvePath(ItemResolveArgs args)
+   at Emby.Server.Implementations.Library.LibraryManager.Resolve(ItemResolveArgs args, IItemResolver resolver)
+[2023-09-13 18:27:37.467 +08:00] [ERR] [69] MediaBrowser.Controller.Entities.BaseItem: Error refreshing owned items for "/data/tvshows"
+System.IO.IOException: Stale file handle : '/data/tvshows'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.FileSystemInfos(String directory, String expression, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.DirectoryInfo.InternalEnumerateInfos(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.DirectoryInfo.EnumerateFileSystemInfos(String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFileSystemEntries(String path, Boolean recursive)
+   at MediaBrowser.Controller.Providers.DirectoryService.<>c.<GetFileSystemEntries>b__5_0(String p, IFileSystem fileSystem)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd[TArg](TKey key, Func`3 valueFactory, TArg factoryArgument)
+   at MediaBrowser.Controller.Providers.DirectoryService.GetFileSystemEntries(String path)
+   at MediaBrowser.Controller.Entities.BaseItem.GetFileSystemChildren(IDirectoryService directoryService)
+   at MediaBrowser.Controller.Entities.BaseItem.RefreshMetadata(MetadataRefreshOptions options, CancellationToken cancellationToken)
+[2023-09-13 18:27:37.467 +08:00] [ERR] [74] MediaBrowser.Controller.Entities.BaseItem: Error refreshing owned items for "/data/movies"
+System.IO.IOException: Stale file handle : '/data/movies'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.FileSystemInfos(String directory, String expression, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.DirectoryInfo.InternalEnumerateInfos(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.DirectoryInfo.EnumerateFileSystemInfos(String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFileSystemEntries(String path, Boolean recursive)
+   at MediaBrowser.Controller.Providers.DirectoryService.<>c.<GetFileSystemEntries>b__5_0(String p, IFileSystem fileSystem)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd[TArg](TKey key, Func`3 valueFactory, TArg factoryArgument)
+   at MediaBrowser.Controller.Providers.DirectoryService.GetFileSystemEntries(String path)
+   at MediaBrowser.Controller.Entities.BaseItem.GetFileSystemChildren(IDirectoryService directoryService)
+   at MediaBrowser.Controller.Entities.BaseItem.RefreshMetadata(MetadataRefreshOptions options, CancellationToken cancellationToken)
+[2023-09-13 18:27:37.489 +08:00] [ERR] [69] MediaBrowser.Providers.Folders.CollectionFolderMetadataService: Error validating images for "/config/data/root/default/Shows"
+System.IO.IOException: Stale file handle : '/data/tvshows'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.FileInfos(String directory, String expression, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.DirectoryInfo.InternalEnumerateInfos(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.DirectoryInfo.EnumerateFiles(String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFiles(String path, IReadOnlyList`1 extensions, Boolean enableCaseSensitiveExtensions, Boolean recursive)
+   at MediaBrowser.LocalMetadata.Images.LocalImageProvider.<GetImages>b__15_0(String i)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToArray()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.OrderedEnumerable`1.ToList()
+   at MediaBrowser.LocalMetadata.Images.LocalImageProvider.GetImages(BaseItem item, IEnumerable`1 paths, IDirectoryService directoryService)
+   at MediaBrowser.LocalMetadata.Images.CollectionFolderLocalImageProvider.GetImages(BaseItem item, IDirectoryService directoryService)
+   at MediaBrowser.Providers.Manager.ItemImageProvider.<>c__DisplayClass6_0.<ValidateImages>b__0(ILocalImageProvider i)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToList()
+   at MediaBrowser.Providers.Manager.ItemImageProvider.ValidateImages(BaseItem item, IEnumerable`1 providers, IDirectoryService directoryService)
+   at MediaBrowser.Providers.Manager.MetadataService`2.RefreshMetadata(BaseItem item, MetadataRefreshOptions refreshOptions, CancellationToken cancellationToken)
+[2023-09-13 18:27:37.489 +08:00] [ERR] [74] MediaBrowser.Providers.Folders.CollectionFolderMetadataService: Error validating images for "/config/data/root/default/Movies"
+System.IO.IOException: Stale file handle : '/data/movies'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.FileInfos(String directory, String expression, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.DirectoryInfo.InternalEnumerateInfos(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.DirectoryInfo.EnumerateFiles(String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFiles(String path, IReadOnlyList`1 extensions, Boolean enableCaseSensitiveExtensions, Boolean recursive)
+   at MediaBrowser.LocalMetadata.Images.LocalImageProvider.<GetImages>b__15_0(String i)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToArray()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.OrderedEnumerable`1.ToList()
+   at MediaBrowser.LocalMetadata.Images.LocalImageProvider.GetImages(BaseItem item, IEnumerable`1 paths, IDirectoryService directoryService)
+   at MediaBrowser.LocalMetadata.Images.CollectionFolderLocalImageProvider.GetImages(BaseItem item, IDirectoryService directoryService)
+   at MediaBrowser.Providers.Manager.ItemImageProvider.<>c__DisplayClass6_0.<ValidateImages>b__0(ILocalImageProvider i)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToList()
+   at MediaBrowser.Providers.Manager.ItemImageProvider.ValidateImages(BaseItem item, IEnumerable`1 providers, IDirectoryService directoryService)
+   at MediaBrowser.Providers.Manager.MetadataService`2.RefreshMetadata(BaseItem item, MetadataRefreshOptions refreshOptions, CancellationToken cancellationToken)
+[2023-09-13 18:27:37.494 +08:00] [ERR] [74] MediaBrowser.Providers.Folders.CollectionFolderMetadataService: Error validating images for "/config/data/root/default/Movies"
+System.IO.IOException: Stale file handle : '/data/movies'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.FileInfos(String directory, String expression, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.DirectoryInfo.InternalEnumerateInfos(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.DirectoryInfo.EnumerateFiles(String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFiles(String path, IReadOnlyList`1 extensions, Boolean enableCaseSensitiveExtensions, Boolean recursive)
+   at MediaBrowser.LocalMetadata.Images.LocalImageProvider.<GetImages>b__15_0(String i)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToArray()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.OrderedEnumerable`1.ToList()
+   at MediaBrowser.LocalMetadata.Images.LocalImageProvider.GetImages(BaseItem item, IEnumerable`1 paths, IDirectoryService directoryService)
+   at MediaBrowser.LocalMetadata.Images.CollectionFolderLocalImageProvider.GetImages(BaseItem item, IDirectoryService directoryService)
+   at MediaBrowser.Providers.Manager.ItemImageProvider.<>c__DisplayClass6_0.<ValidateImages>b__0(ILocalImageProvider i)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToList()
+   at MediaBrowser.Providers.Manager.ItemImageProvider.ValidateImages(BaseItem item, IEnumerable`1 providers, IDirectoryService directoryService)
+   at MediaBrowser.Providers.Manager.MetadataService`2.RefreshMetadata(BaseItem item, MetadataRefreshOptions refreshOptions, CancellationToken cancellationToken)
+[2023-09-13 18:27:37.497 +08:00] [ERR] [74] MediaBrowser.Providers.Folders.CollectionFolderMetadataService: Error validating images for "/config/data/root/default/Shows"
+System.IO.IOException: Stale file handle : '/data/tvshows'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.FileInfos(String directory, String expression, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.DirectoryInfo.InternalEnumerateInfos(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.DirectoryInfo.EnumerateFiles(String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFiles(String path, IReadOnlyList`1 extensions, Boolean enableCaseSensitiveExtensions, Boolean recursive)
+   at MediaBrowser.LocalMetadata.Images.LocalImageProvider.<GetImages>b__15_0(String i)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToArray()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.OrderedEnumerable`1.ToList()
+   at MediaBrowser.LocalMetadata.Images.LocalImageProvider.GetImages(BaseItem item, IEnumerable`1 paths, IDirectoryService directoryService)
+   at MediaBrowser.LocalMetadata.Images.CollectionFolderLocalImageProvider.GetImages(BaseItem item, IDirectoryService directoryService)
+   at MediaBrowser.Providers.Manager.ItemImageProvider.<>c__DisplayClass6_0.<ValidateImages>b__0(ILocalImageProvider i)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToList()
+   at MediaBrowser.Providers.Manager.ItemImageProvider.ValidateImages(BaseItem item, IEnumerable`1 providers, IDirectoryService directoryService)
+   at MediaBrowser.Providers.Manager.MetadataService`2.RefreshMetadata(BaseItem item, MetadataRefreshOptions refreshOptions, CancellationToken cancellationToken)
+[2023-09-13 18:27:37.506 +08:00] [ERR] [74] Emby.Server.Implementations.Library.LibraryManager: Error in GetFilteredFileSystemEntries isPhysicalRoot: False IsVf: False
+System.IO.IOException: Stale file handle : '/data/tvshows'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.FileSystemInfos(String directory, String expression, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.DirectoryInfo.InternalEnumerateInfos(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.DirectoryInfo.EnumerateFileSystemInfos(String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFileSystemEntries(String path, Boolean recursive)
+   at MediaBrowser.Controller.Providers.DirectoryService.<>c.<GetFileSystemEntries>b__5_0(String p, IFileSystem fileSystem)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd[TArg](TKey key, Func`3 valueFactory, TArg factoryArgument)
+   at MediaBrowser.Controller.Providers.DirectoryService.GetFileSystemEntries(String path)
+   at MediaBrowser.Controller.IO.FileData.GetFilteredFileSystemEntries(IDirectoryService directoryService, String path, IFileSystem fileSystem, IServerApplicationHost appHost, ILogger logger, ItemResolveArgs args, Int32 flattenFolderDepth, Boolean resolveShortcuts)
+   at Emby.Server.Implementations.Library.LibraryManager.ResolvePath(FileSystemMetadata fileInfo, IDirectoryService directoryService, IItemResolver[] resolvers, Folder parent, String collectionType, LibraryOptions libraryOptions)
+[2023-09-13 18:27:37.507 +08:00] [ERR] [74] Emby.Server.Implementations.Library.LibraryManager: Error in "PlaylistResolver" resolving "/data/tvshows"
+System.IO.IOException: Stale file handle : '/data/tvshows'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.UserFiles(String directory, String expression, EnumerationOptions options)
+   at System.IO.Directory.InternalEnumeratePaths(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.Directory.EnumerateFiles(String path, String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.Library.Resolvers.PlaylistResolver.Resolve(ItemResolveArgs args)
+   at Emby.Server.Implementations.Library.Resolvers.ItemResolver`1.MediaBrowser.Controller.Resolvers.IItemResolver.ResolvePath(ItemResolveArgs args)
+   at Emby.Server.Implementations.Library.LibraryManager.Resolve(ItemResolveArgs args, IItemResolver resolver)
+[2023-09-13 18:27:37.508 +08:00] [ERR] [74] Emby.Server.Implementations.Library.LibraryManager: Error in GetFilteredFileSystemEntries isPhysicalRoot: False IsVf: False
+System.IO.IOException: Stale file handle : '/data/movies'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.FileSystemInfos(String directory, String expression, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.DirectoryInfo.InternalEnumerateInfos(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.DirectoryInfo.EnumerateFileSystemInfos(String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFileSystemEntries(String path, Boolean recursive)
+   at MediaBrowser.Controller.Providers.DirectoryService.<>c.<GetFileSystemEntries>b__5_0(String p, IFileSystem fileSystem)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd[TArg](TKey key, Func`3 valueFactory, TArg factoryArgument)
+   at MediaBrowser.Controller.Providers.DirectoryService.GetFileSystemEntries(String path)
+   at MediaBrowser.Controller.IO.FileData.GetFilteredFileSystemEntries(IDirectoryService directoryService, String path, IFileSystem fileSystem, IServerApplicationHost appHost, ILogger logger, ItemResolveArgs args, Int32 flattenFolderDepth, Boolean resolveShortcuts)
+   at Emby.Server.Implementations.Library.LibraryManager.ResolvePath(FileSystemMetadata fileInfo, IDirectoryService directoryService, IItemResolver[] resolvers, Folder parent, String collectionType, LibraryOptions libraryOptions)
+[2023-09-13 18:27:37.509 +08:00] [ERR] [74] Emby.Server.Implementations.Library.LibraryManager: Error in "PlaylistResolver" resolving "/data/movies"
+System.IO.IOException: Stale file handle : '/data/movies'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.UserFiles(String directory, String expression, EnumerationOptions options)
+   at System.IO.Directory.InternalEnumeratePaths(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.Directory.EnumerateFiles(String path, String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.Library.Resolvers.PlaylistResolver.Resolve(ItemResolveArgs args)
+   at Emby.Server.Implementations.Library.Resolvers.ItemResolver`1.MediaBrowser.Controller.Resolvers.IItemResolver.ResolvePath(ItemResolveArgs args)
+   at Emby.Server.Implementations.Library.LibraryManager.Resolve(ItemResolveArgs args, IItemResolver resolver)
+[2023-09-13 18:27:37.519 +08:00] [ERR] [83] MediaBrowser.Controller.Entities.BaseItem: Error retrieving children folder
+System.IO.IOException: Stale file handle : '/data/movies'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.FileSystemInfos(String directory, String expression, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.DirectoryInfo.InternalEnumerateInfos(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.DirectoryInfo.EnumerateFileSystemInfos(String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFileSystemEntries(String path, Boolean recursive)
+   at MediaBrowser.Controller.Providers.DirectoryService.<>c.<GetFileSystemEntries>b__5_0(String p, IFileSystem fileSystem)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd[TArg](TKey key, Func`3 valueFactory, TArg factoryArgument)
+   at MediaBrowser.Controller.Providers.DirectoryService.GetFileSystemEntries(String path)
+   at MediaBrowser.Controller.Entities.BaseItem.GetFileSystemChildren(IDirectoryService directoryService)
+   at MediaBrowser.Controller.Entities.Folder.GetNonCachedChildren(IDirectoryService directoryService)
+   at MediaBrowser.Controller.Entities.Folder.ValidateChildrenInternal2(IProgress`1 progress, Boolean recursive, Boolean refreshChildMetadata, MetadataRefreshOptions refreshOptions, IDirectoryService directoryService, CancellationToken cancellationToken)
+[2023-09-13 18:27:37.519 +08:00] [ERR] [65] MediaBrowser.Controller.Entities.BaseItem: Error retrieving children folder
+System.IO.IOException: Stale file handle : '/data/tvshows'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.FileSystemInfos(String directory, String expression, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.DirectoryInfo.InternalEnumerateInfos(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.DirectoryInfo.EnumerateFileSystemInfos(String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFileSystemEntries(String path, Boolean recursive)
+   at MediaBrowser.Controller.Providers.DirectoryService.<>c.<GetFileSystemEntries>b__5_0(String p, IFileSystem fileSystem)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd[TArg](TKey key, Func`3 valueFactory, TArg factoryArgument)
+   at MediaBrowser.Controller.Providers.DirectoryService.GetFileSystemEntries(String path)
+   at MediaBrowser.Controller.Entities.BaseItem.GetFileSystemChildren(IDirectoryService directoryService)
+   at MediaBrowser.Controller.Entities.Folder.GetNonCachedChildren(IDirectoryService directoryService)
+   at MediaBrowser.Controller.Entities.Folder.ValidateChildrenInternal2(IProgress`1 progress, Boolean recursive, Boolean refreshChildMetadata, MetadataRefreshOptions refreshOptions, IDirectoryService directoryService, CancellationToken cancellationToken)
+[2023-09-13 18:27:37.524 +08:00] [ERR] [65] MediaBrowser.Controller.Entities.BaseItem: Error refreshing owned items for "/data/tvshows"
+System.IO.IOException: Stale file handle : '/data/tvshows'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.FileSystemInfos(String directory, String expression, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.DirectoryInfo.InternalEnumerateInfos(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.DirectoryInfo.EnumerateFileSystemInfos(String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFileSystemEntries(String path, Boolean recursive)
+   at MediaBrowser.Controller.Providers.DirectoryService.<>c.<GetFileSystemEntries>b__5_0(String p, IFileSystem fileSystem)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd[TArg](TKey key, Func`3 valueFactory, TArg factoryArgument)
+   at MediaBrowser.Controller.Providers.DirectoryService.GetFileSystemEntries(String path)
+   at MediaBrowser.Controller.Entities.BaseItem.GetFileSystemChildren(IDirectoryService directoryService)
+   at MediaBrowser.Controller.Entities.BaseItem.RefreshMetadata(MetadataRefreshOptions options, CancellationToken cancellationToken)
+[2023-09-13 18:27:37.524 +08:00] [ERR] [83] MediaBrowser.Controller.Entities.BaseItem: Error refreshing owned items for "/data/movies"
+System.IO.IOException: Stale file handle : '/data/movies'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.FileSystemInfos(String directory, String expression, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.DirectoryInfo.InternalEnumerateInfos(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.DirectoryInfo.EnumerateFileSystemInfos(String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFileSystemEntries(String path, Boolean recursive)
+   at MediaBrowser.Controller.Providers.DirectoryService.<>c.<GetFileSystemEntries>b__5_0(String p, IFileSystem fileSystem)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd[TArg](TKey key, Func`3 valueFactory, TArg factoryArgument)
+   at MediaBrowser.Controller.Providers.DirectoryService.GetFileSystemEntries(String path)
+   at MediaBrowser.Controller.Entities.BaseItem.GetFileSystemChildren(IDirectoryService directoryService)
+   at MediaBrowser.Controller.Entities.BaseItem.RefreshMetadata(MetadataRefreshOptions options, CancellationToken cancellationToken)
+[2023-09-13 18:27:37.604 +08:00] [ERR] [65] Emby.Server.Implementations.Library.LibraryManager: Error running post-scan task
+System.ArgumentException: Not enough valid pictures provided to create a splashscreen!
+   at Jellyfin.Drawing.Skia.SplashscreenBuilder.GenerateCollage(IReadOnlyList`1 posters, IReadOnlyList`1 backdrops)
+   at Jellyfin.Drawing.Skia.SplashscreenBuilder.GenerateSplash(IReadOnlyList`1 posters, IReadOnlyList`1 backdrops, String outputPath)
+   at Jellyfin.Drawing.Skia.SkiaEncoder.CreateSplashscreen(IReadOnlyList`1 posters, IReadOnlyList`1 backdrops)
+   at Emby.Server.Implementations.Library.SplashscreenPostScanTask.Run(IProgress`1 progress, CancellationToken cancellationToken)
+   at Emby.Server.Implementations.Library.LibraryManager.RunPostScanTasks(IProgress`1 progress, CancellationToken cancellationToken)
+[2023-09-13 18:27:37.626 +08:00] [INF] [65] Emby.Server.Implementations.IO.LibraryMonitor: Skipping realtime monitor for "/data/movies" because the path does not exist
+[2023-09-13 18:27:37.626 +08:00] [INF] [65] Emby.Server.Implementations.IO.LibraryMonitor: Skipping realtime monitor for "/data/tvshows" because the path does not exist
+[2023-09-13 18:27:37.626 +08:00] [INF] [65] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Scan Media Library" Completed after 0 minute(s) and 0 seconds
+[2023-09-13 18:27:37.627 +08:00] [INF] [65] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-09-13 18:30:47.346 +08:00] [INF] [71] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "192.168.50.50" request
+[2023-09-13 18:31:40.796 +08:00] [ERR] [11] Emby.Server.Implementations.Library.LibraryManager: Error in GetFilteredFileSystemEntries isPhysicalRoot: False IsVf: False
+System.IO.IOException: Stale file handle : '/data/movies'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.FileSystemInfos(String directory, String expression, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.DirectoryInfo.InternalEnumerateInfos(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.DirectoryInfo.EnumerateFileSystemInfos(String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFileSystemEntries(String path, Boolean recursive)
+   at MediaBrowser.Controller.Providers.DirectoryService.<>c.<GetFileSystemEntries>b__5_0(String p, IFileSystem fileSystem)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd[TArg](TKey key, Func`3 valueFactory, TArg factoryArgument)
+   at MediaBrowser.Controller.Providers.DirectoryService.GetFileSystemEntries(String path)
+   at MediaBrowser.Controller.IO.FileData.GetFilteredFileSystemEntries(IDirectoryService directoryService, String path, IFileSystem fileSystem, IServerApplicationHost appHost, ILogger logger, ItemResolveArgs args, Int32 flattenFolderDepth, Boolean resolveShortcuts)
+   at Emby.Server.Implementations.Library.LibraryManager.ResolvePath(FileSystemMetadata fileInfo, IDirectoryService directoryService, IItemResolver[] resolvers, Folder parent, String collectionType, LibraryOptions libraryOptions)
+[2023-09-13 18:31:40.801 +08:00] [ERR] [11] Emby.Server.Implementations.Library.LibraryManager: Error in "PlaylistResolver" resolving "/data/movies"
+System.IO.IOException: Stale file handle : '/data/movies'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.UserFiles(String directory, String expression, EnumerationOptions options)
+   at System.IO.Directory.InternalEnumeratePaths(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.Directory.EnumerateFiles(String path, String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.Library.Resolvers.PlaylistResolver.Resolve(ItemResolveArgs args)
+   at Emby.Server.Implementations.Library.Resolvers.ItemResolver`1.MediaBrowser.Controller.Resolvers.IItemResolver.ResolvePath(ItemResolveArgs args)
+   at Emby.Server.Implementations.Library.LibraryManager.Resolve(ItemResolveArgs args, IItemResolver resolver)
+[2023-09-13 18:31:40.806 +08:00] [INF] [11] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Folder", Name: "tvshows", Path: "/data/tvshows", Id: f4dda38c-d82a-250f-2d1c-b08db0c166cf
+[2023-09-13 18:31:40.844 +08:00] [ERR] [67] MediaBrowser.Controller.Entities.BaseItem: Error refreshing owned items for "/data/movies"
+System.IO.IOException: Stale file handle : '/data/movies'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.FileSystemInfos(String directory, String expression, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.DirectoryInfo.InternalEnumerateInfos(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.DirectoryInfo.EnumerateFileSystemInfos(String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFileSystemEntries(String path, Boolean recursive)
+   at MediaBrowser.Controller.Providers.DirectoryService.<>c.<GetFileSystemEntries>b__5_0(String p, IFileSystem fileSystem)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd[TArg](TKey key, Func`3 valueFactory, TArg factoryArgument)
+   at MediaBrowser.Controller.Providers.DirectoryService.GetFileSystemEntries(String path)
+   at MediaBrowser.Controller.Entities.BaseItem.GetFileSystemChildren(IDirectoryService directoryService)
+   at MediaBrowser.Controller.Entities.BaseItem.RefreshMetadata(MetadataRefreshOptions options, CancellationToken cancellationToken)
+[2023-09-13 18:31:40.850 +08:00] [INF] [67] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "CollectionFolder", Name: "Shows", Path: "/config/data/root/default/Shows", Id: a656b907-eb3a-7353-2e40-e44b968d0225
+[2023-09-13 18:31:40.881 +08:00] [ERR] [12] MediaBrowser.Providers.Folders.CollectionFolderMetadataService: Error validating images for "/config/data/root/default/Movies"
+System.IO.IOException: Stale file handle : '/data/movies'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.FileInfos(String directory, String expression, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.DirectoryInfo.InternalEnumerateInfos(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.DirectoryInfo.EnumerateFiles(String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFiles(String path, IReadOnlyList`1 extensions, Boolean enableCaseSensitiveExtensions, Boolean recursive)
+   at MediaBrowser.LocalMetadata.Images.LocalImageProvider.<GetImages>b__15_0(String i)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToArray()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.OrderedEnumerable`1.ToList()
+   at MediaBrowser.LocalMetadata.Images.LocalImageProvider.GetImages(BaseItem item, IEnumerable`1 paths, IDirectoryService directoryService)
+   at MediaBrowser.LocalMetadata.Images.CollectionFolderLocalImageProvider.GetImages(BaseItem item, IDirectoryService directoryService)
+   at MediaBrowser.Providers.Manager.ItemImageProvider.<>c__DisplayClass6_0.<ValidateImages>b__0(ILocalImageProvider i)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToList()
+   at MediaBrowser.Providers.Manager.ItemImageProvider.ValidateImages(BaseItem item, IEnumerable`1 providers, IDirectoryService directoryService)
+   at MediaBrowser.Providers.Manager.MetadataService`2.RefreshMetadata(BaseItem item, MetadataRefreshOptions refreshOptions, CancellationToken cancellationToken)
+[2023-09-13 18:31:40.883 +08:00] [ERR] [12] MediaBrowser.Providers.Folders.CollectionFolderMetadataService: Error validating images for "/config/data/root/default/Movies"
+System.IO.IOException: Stale file handle : '/data/movies'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.FileInfos(String directory, String expression, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.DirectoryInfo.InternalEnumerateInfos(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.DirectoryInfo.EnumerateFiles(String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFiles(String path, IReadOnlyList`1 extensions, Boolean enableCaseSensitiveExtensions, Boolean recursive)
+   at MediaBrowser.LocalMetadata.Images.LocalImageProvider.<GetImages>b__15_0(String i)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToArray()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.OrderedEnumerable`1.ToList()
+   at MediaBrowser.LocalMetadata.Images.LocalImageProvider.GetImages(BaseItem item, IEnumerable`1 paths, IDirectoryService directoryService)
+   at MediaBrowser.LocalMetadata.Images.CollectionFolderLocalImageProvider.GetImages(BaseItem item, IDirectoryService directoryService)
+   at MediaBrowser.Providers.Manager.ItemImageProvider.<>c__DisplayClass6_0.<ValidateImages>b__0(ILocalImageProvider i)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToList()
+   at MediaBrowser.Providers.Manager.ItemImageProvider.ValidateImages(BaseItem item, IEnumerable`1 providers, IDirectoryService directoryService)
+   at MediaBrowser.Providers.Manager.MetadataService`2.RefreshMetadata(BaseItem item, MetadataRefreshOptions refreshOptions, CancellationToken cancellationToken)
+[2023-09-13 18:31:40.885 +08:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "RefreshMediaLibraryTask"
+[2023-09-13 18:31:40.885 +08:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Scan Media Library"
+[2023-09-13 18:31:40.890 +08:00] [INF] [11] Emby.Server.Implementations.Library.LibraryManager: Validating media library
+[2023-09-13 18:31:40.919 +08:00] [ERR] [11] Emby.Server.Implementations.Library.LibraryManager: Error in GetFilteredFileSystemEntries isPhysicalRoot: False IsVf: False
+System.IO.IOException: Stale file handle : '/data/movies'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.FileSystemInfos(String directory, String expression, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.DirectoryInfo.InternalEnumerateInfos(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.DirectoryInfo.EnumerateFileSystemInfos(String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFileSystemEntries(String path, Boolean recursive)
+   at MediaBrowser.Controller.Providers.DirectoryService.<>c.<GetFileSystemEntries>b__5_0(String p, IFileSystem fileSystem)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd[TArg](TKey key, Func`3 valueFactory, TArg factoryArgument)
+   at MediaBrowser.Controller.Providers.DirectoryService.GetFileSystemEntries(String path)
+   at MediaBrowser.Controller.IO.FileData.GetFilteredFileSystemEntries(IDirectoryService directoryService, String path, IFileSystem fileSystem, IServerApplicationHost appHost, ILogger logger, ItemResolveArgs args, Int32 flattenFolderDepth, Boolean resolveShortcuts)
+   at Emby.Server.Implementations.Library.LibraryManager.ResolvePath(FileSystemMetadata fileInfo, IDirectoryService directoryService, IItemResolver[] resolvers, Folder parent, String collectionType, LibraryOptions libraryOptions)
+[2023-09-13 18:31:40.920 +08:00] [ERR] [11] Emby.Server.Implementations.Library.LibraryManager: Error in "PlaylistResolver" resolving "/data/movies"
+System.IO.IOException: Stale file handle : '/data/movies'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.UserFiles(String directory, String expression, EnumerationOptions options)
+   at System.IO.Directory.InternalEnumeratePaths(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.Directory.EnumerateFiles(String path, String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.Library.Resolvers.PlaylistResolver.Resolve(ItemResolveArgs args)
+   at Emby.Server.Implementations.Library.Resolvers.ItemResolver`1.MediaBrowser.Controller.Resolvers.IItemResolver.ResolvePath(ItemResolveArgs args)
+   at Emby.Server.Implementations.Library.LibraryManager.Resolve(ItemResolveArgs args, IItemResolver resolver)
+[2023-09-13 18:31:40.921 +08:00] [ERR] [11] MediaBrowser.Controller.Entities.BaseItem: Error refreshing owned items for "/data/movies"
+System.IO.IOException: Stale file handle : '/data/movies'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.FileSystemInfos(String directory, String expression, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.DirectoryInfo.InternalEnumerateInfos(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.DirectoryInfo.EnumerateFileSystemInfos(String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFileSystemEntries(String path, Boolean recursive)
+   at MediaBrowser.Controller.Providers.DirectoryService.<>c.<GetFileSystemEntries>b__5_0(String p, IFileSystem fileSystem)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd[TArg](TKey key, Func`3 valueFactory, TArg factoryArgument)
+   at MediaBrowser.Controller.Providers.DirectoryService.GetFileSystemEntries(String path)
+   at MediaBrowser.Controller.Entities.BaseItem.GetFileSystemChildren(IDirectoryService directoryService)
+   at MediaBrowser.Controller.Entities.BaseItem.RefreshMetadata(MetadataRefreshOptions options, CancellationToken cancellationToken)
+[2023-09-13 18:31:40.924 +08:00] [ERR] [11] MediaBrowser.Providers.Folders.CollectionFolderMetadataService: Error validating images for "/config/data/root/default/Movies"
+System.IO.IOException: Stale file handle : '/data/movies'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.FileInfos(String directory, String expression, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.DirectoryInfo.InternalEnumerateInfos(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.DirectoryInfo.EnumerateFiles(String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFiles(String path, IReadOnlyList`1 extensions, Boolean enableCaseSensitiveExtensions, Boolean recursive)
+   at MediaBrowser.LocalMetadata.Images.LocalImageProvider.<GetImages>b__15_0(String i)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToArray()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.OrderedEnumerable`1.ToList()
+   at MediaBrowser.LocalMetadata.Images.LocalImageProvider.GetImages(BaseItem item, IEnumerable`1 paths, IDirectoryService directoryService)
+   at MediaBrowser.LocalMetadata.Images.CollectionFolderLocalImageProvider.GetImages(BaseItem item, IDirectoryService directoryService)
+   at MediaBrowser.Providers.Manager.ItemImageProvider.<>c__DisplayClass6_0.<ValidateImages>b__0(ILocalImageProvider i)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToList()
+   at MediaBrowser.Providers.Manager.ItemImageProvider.ValidateImages(BaseItem item, IEnumerable`1 providers, IDirectoryService directoryService)
+   at MediaBrowser.Providers.Manager.MetadataService`2.RefreshMetadata(BaseItem item, MetadataRefreshOptions refreshOptions, CancellationToken cancellationToken)
+[2023-09-13 18:31:40.926 +08:00] [ERR] [11] MediaBrowser.Providers.Folders.CollectionFolderMetadataService: Error validating images for "/config/data/root/default/Movies"
+System.IO.IOException: Stale file handle : '/data/movies'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.FileInfos(String directory, String expression, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.DirectoryInfo.InternalEnumerateInfos(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.DirectoryInfo.EnumerateFiles(String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFiles(String path, IReadOnlyList`1 extensions, Boolean enableCaseSensitiveExtensions, Boolean recursive)
+   at MediaBrowser.LocalMetadata.Images.LocalImageProvider.<GetImages>b__15_0(String i)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToArray()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.OrderedEnumerable`1.ToList()
+   at MediaBrowser.LocalMetadata.Images.LocalImageProvider.GetImages(BaseItem item, IEnumerable`1 paths, IDirectoryService directoryService)
+   at MediaBrowser.LocalMetadata.Images.CollectionFolderLocalImageProvider.GetImages(BaseItem item, IDirectoryService directoryService)
+   at MediaBrowser.Providers.Manager.ItemImageProvider.<>c__DisplayClass6_0.<ValidateImages>b__0(ILocalImageProvider i)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToList()
+   at MediaBrowser.Providers.Manager.ItemImageProvider.ValidateImages(BaseItem item, IEnumerable`1 providers, IDirectoryService directoryService)
+   at MediaBrowser.Providers.Manager.MetadataService`2.RefreshMetadata(BaseItem item, MetadataRefreshOptions refreshOptions, CancellationToken cancellationToken)
+[2023-09-13 18:31:40.927 +08:00] [ERR] [11] Emby.Server.Implementations.Library.LibraryManager: Error in GetFilteredFileSystemEntries isPhysicalRoot: False IsVf: False
+System.IO.IOException: Stale file handle : '/data/movies'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.FileSystemInfos(String directory, String expression, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.DirectoryInfo.InternalEnumerateInfos(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.DirectoryInfo.EnumerateFileSystemInfos(String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFileSystemEntries(String path, Boolean recursive)
+   at MediaBrowser.Controller.Providers.DirectoryService.<>c.<GetFileSystemEntries>b__5_0(String p, IFileSystem fileSystem)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd[TArg](TKey key, Func`3 valueFactory, TArg factoryArgument)
+   at MediaBrowser.Controller.Providers.DirectoryService.GetFileSystemEntries(String path)
+   at MediaBrowser.Controller.IO.FileData.GetFilteredFileSystemEntries(IDirectoryService directoryService, String path, IFileSystem fileSystem, IServerApplicationHost appHost, ILogger logger, ItemResolveArgs args, Int32 flattenFolderDepth, Boolean resolveShortcuts)
+   at Emby.Server.Implementations.Library.LibraryManager.ResolvePath(FileSystemMetadata fileInfo, IDirectoryService directoryService, IItemResolver[] resolvers, Folder parent, String collectionType, LibraryOptions libraryOptions)
+[2023-09-13 18:31:40.928 +08:00] [ERR] [11] Emby.Server.Implementations.Library.LibraryManager: Error in "PlaylistResolver" resolving "/data/movies"
+System.IO.IOException: Stale file handle : '/data/movies'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.UserFiles(String directory, String expression, EnumerationOptions options)
+   at System.IO.Directory.InternalEnumeratePaths(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.Directory.EnumerateFiles(String path, String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.Library.Resolvers.PlaylistResolver.Resolve(ItemResolveArgs args)
+   at Emby.Server.Implementations.Library.Resolvers.ItemResolver`1.MediaBrowser.Controller.Resolvers.IItemResolver.ResolvePath(ItemResolveArgs args)
+   at Emby.Server.Implementations.Library.LibraryManager.Resolve(ItemResolveArgs args, IItemResolver resolver)
+[2023-09-13 18:31:40.929 +08:00] [ERR] [11] MediaBrowser.Controller.Entities.BaseItem: Error retrieving children folder
+System.IO.IOException: Stale file handle : '/data/movies'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.FileSystemInfos(String directory, String expression, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.DirectoryInfo.InternalEnumerateInfos(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.DirectoryInfo.EnumerateFileSystemInfos(String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFileSystemEntries(String path, Boolean recursive)
+   at MediaBrowser.Controller.Providers.DirectoryService.<>c.<GetFileSystemEntries>b__5_0(String p, IFileSystem fileSystem)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd[TArg](TKey key, Func`3 valueFactory, TArg factoryArgument)
+   at MediaBrowser.Controller.Providers.DirectoryService.GetFileSystemEntries(String path)
+   at MediaBrowser.Controller.Entities.BaseItem.GetFileSystemChildren(IDirectoryService directoryService)
+   at MediaBrowser.Controller.Entities.Folder.GetNonCachedChildren(IDirectoryService directoryService)
+   at MediaBrowser.Controller.Entities.Folder.ValidateChildrenInternal2(IProgress`1 progress, Boolean recursive, Boolean refreshChildMetadata, MetadataRefreshOptions refreshOptions, IDirectoryService directoryService, CancellationToken cancellationToken)
+[2023-09-13 18:31:40.930 +08:00] [ERR] [67] MediaBrowser.Controller.Entities.BaseItem: Error refreshing owned items for "/data/movies"
+System.IO.IOException: Stale file handle : '/data/movies'
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.FileSystemInfos(String directory, String expression, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.DirectoryInfo.InternalEnumerateInfos(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.DirectoryInfo.EnumerateFileSystemInfos(String searchPattern, EnumerationOptions enumerationOptions)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFileSystemEntries(String path, Boolean recursive)
+   at MediaBrowser.Controller.Providers.DirectoryService.<>c.<GetFileSystemEntries>b__5_0(String p, IFileSystem fileSystem)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd[TArg](TKey key, Func`3 valueFactory, TArg factoryArgument)
+   at MediaBrowser.Controller.Providers.DirectoryService.GetFileSystemEntries(String path)
+   at MediaBrowser.Controller.Entities.BaseItem.GetFileSystemChildren(IDirectoryService directoryService)
+   at MediaBrowser.Controller.Entities.BaseItem.RefreshMetadata(MetadataRefreshOptions options, CancellationToken cancellationToken)
+[2023-09-13 18:31:40.970 +08:00] [ERR] [12] Emby.Server.Implementations.Library.LibraryManager: Error running post-scan task
+System.ArgumentException: Not enough valid pictures provided to create a splashscreen!
+   at Jellyfin.Drawing.Skia.SplashscreenBuilder.GenerateCollage(IReadOnlyList`1 posters, IReadOnlyList`1 backdrops)
+   at Jellyfin.Drawing.Skia.SplashscreenBuilder.GenerateSplash(IReadOnlyList`1 posters, IReadOnlyList`1 backdrops, String outputPath)
+   at Jellyfin.Drawing.Skia.SkiaEncoder.CreateSplashscreen(IReadOnlyList`1 posters, IReadOnlyList`1 backdrops)
+   at Emby.Server.Implementations.Library.SplashscreenPostScanTask.Run(IProgress`1 progress, CancellationToken cancellationToken)
+   at Emby.Server.Implementations.Library.LibraryManager.RunPostScanTasks(IProgress`1 progress, CancellationToken cancellationToken)
+[2023-09-13 18:31:40.974 +08:00] [INF] [12] Emby.Server.Implementations.IO.LibraryMonitor: Skipping realtime monitor for "/data/movies" because the path does not exist
+[2023-09-13 18:31:40.974 +08:00] [INF] [12] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Scan Media Library" Completed after 0 minute(s) and 0 seconds
+[2023-09-13 18:31:40.974 +08:00] [INF] [12] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-09-13 18:31:44.448 +08:00] [INF] [12] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Folder", Name: "movies", Path: "/data/movies", Id: 429cfa5c-1648-e89c-5f69-6f08e19b138f
+[2023-09-13 18:31:44.476 +08:00] [INF] [12] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "CollectionFolder", Name: "Movies", Path: "/config/data/root/default/Movies", Id: f137a2dd-21bb-c1b9-9aa5-c0f6bf02a805
+[2023-09-13 18:31:44.500 +08:00] [INF] [12] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "RefreshMediaLibraryTask"
+[2023-09-13 18:31:44.500 +08:00] [INF] [12] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Scan Media Library"
+[2023-09-13 18:31:44.501 +08:00] [INF] [12] Emby.Server.Implementations.Library.LibraryManager: Validating media library
+[2023-09-13 18:31:44.554 +08:00] [ERR] [67] Emby.Server.Implementations.Library.LibraryManager: Error running post-scan task
+System.ArgumentException: Not enough valid pictures provided to create a splashscreen!
+   at Jellyfin.Drawing.Skia.SplashscreenBuilder.GenerateCollage(IReadOnlyList`1 posters, IReadOnlyList`1 backdrops)
+   at Jellyfin.Drawing.Skia.SplashscreenBuilder.GenerateSplash(IReadOnlyList`1 posters, IReadOnlyList`1 backdrops, String outputPath)
+   at Jellyfin.Drawing.Skia.SkiaEncoder.CreateSplashscreen(IReadOnlyList`1 posters, IReadOnlyList`1 backdrops)
+   at Emby.Server.Implementations.Library.SplashscreenPostScanTask.Run(IProgress`1 progress, CancellationToken cancellationToken)
+   at Emby.Server.Implementations.Library.LibraryManager.RunPostScanTasks(IProgress`1 progress, CancellationToken cancellationToken)
+[2023-09-13 18:31:44.556 +08:00] [INF] [67] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Scan Media Library" Completed after 0 minute(s) and 0 seconds
+[2023-09-13 18:31:44.556 +08:00] [INF] [67] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-09-13 18:32:13.660 +08:00] [ERR] [62] Jellyfin.Server.Middleware.ExceptionMiddleware: Error processing request: "Could not find a part of the path '/d'". URL "GET" "/Environment/DirectoryContents".
+[2023-09-13 18:32:25.331 +08:00] [ERR] [18] Jellyfin.Server.Middleware.ExceptionMiddleware: Error processing request. URL "GET" "/Users/7e9d2a0a6465443f86a33678e700afed/Items".
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Jellyfin.Api.Controllers.ItemsController.GetItems(Guid userId, String maxOfficialRating, Nullable`1 hasThemeSong, Nullable`1 hasThemeVideo, Nullable`1 hasSubtitles, Nullable`1 hasSpecialFeature, Nullable`1 hasTrailer, String adjacentTo, Nullable`1 parentIndexNumber, Nullable`1 hasParentalRating, Nullable`1 isHd, Nullable`1 is4K, LocationType[] locationTypes, LocationType[] excludeLocationTypes, Nullable`1 isMissing, Nullable`1 isUnaired, Nullable`1 minCommunityRating, Nullable`1 minCriticRating, Nullable`1 minPremiereDate, Nullable`1 minDateLastSaved, Nullable`1 minDateLastSavedForUser, Nullable`1 maxPremiereDate, Nullable`1 hasOverview, Nullable`1 hasImdbId, Nullable`1 hasTmdbId, Nullable`1 hasTvdbId, Nullable`1 isMovie, Nullable`1 isSeries, Nullable`1 isNews, Nullable`1 isKids, Nullable`1 isSports, Guid[] excludeItemIds, Nullable`1 startIndex, Nullable`1 limit, Nullable`1 recursive, String searchTerm, SortOrder[] sortOrder, Nullable`1 parentId, ItemFields[] fields, BaseItemKind[] excludeItemTypes, BaseItemKind[] includeItemTypes, ItemFilter[] filters, Nullable`1 isFavorite, String[] mediaTypes, ImageType[] imageTypes, String[] sortBy, Nullable`1 isPlayed, String[] genres, String[] officialRatings, String[] tags, Int32[] years, Nullable`1 enableUserData, Nullable`1 imageTypeLimit, ImageType[] enableImageTypes, String person, Guid[] personIds, String[] personTypes, String[] studios, String[] artists, Guid[] excludeArtistIds, Guid[] artistIds, Guid[] albumArtistIds, Guid[] contributingArtistIds, String[] albums, Guid[] albumIds, Guid[] ids, VideoType[] videoTypes, String minOfficialRating, Nullable`1 isLocked, Nullable`1 isPlaceHolder, Nullable`1 hasOfficialRating, Nullable`1 collapseBoxSetItems, Nullable`1 minWidth, Nullable`1 minHeight, Nullable`1 maxWidth, Nullable`1 maxHeight, Nullable`1 is3D, SeriesStatus[] seriesStatus, String nameStartsWithOrGreater, String nameStartsWith, String nameLessThan, Guid[] studioIds, Guid[] genreIds, Boolean enableTotalRecordCount, Nullable`1 enableImages)
+   at Jellyfin.Api.Controllers.ItemsController.GetItemsByUserId(Guid userId, String maxOfficialRating, Nullable`1 hasThemeSong, Nullable`1 hasThemeVideo, Nullable`1 hasSubtitles, Nullable`1 hasSpecialFeature, Nullable`1 hasTrailer, String adjacentTo, Nullable`1 parentIndexNumber, Nullable`1 hasParentalRating, Nullable`1 isHd, Nullable`1 is4K, LocationType[] locationTypes, LocationType[] excludeLocationTypes, Nullable`1 isMissing, Nullable`1 isUnaired, Nullable`1 minCommunityRating, Nullable`1 minCriticRating, Nullable`1 minPremiereDate, Nullable`1 minDateLastSaved, Nullable`1 minDateLastSavedForUser, Nullable`1 maxPremiereDate, Nullable`1 hasOverview, Nullable`1 hasImdbId, Nullable`1 hasTmdbId, Nullable`1 hasTvdbId, Nullable`1 isMovie, Nullable`1 isSeries, Nullable`1 isNews, Nullable`1 isKids, Nullable`1 isSports, Guid[] excludeItemIds, Nullable`1 startIndex, Nullable`1 limit, Nullable`1 recursive, String searchTerm, SortOrder[] sortOrder, Nullable`1 parentId, ItemFields[] fields, BaseItemKind[] excludeItemTypes, BaseItemKind[] includeItemTypes, ItemFilter[] filters, Nullable`1 isFavorite, String[] mediaTypes, ImageType[] imageTypes, String[] sortBy, Nullable`1 isPlayed, String[] genres, String[] officialRatings, String[] tags, Int32[] years, Nullable`1 enableUserData, Nullable`1 imageTypeLimit, ImageType[] enableImageTypes, String person, Guid[] personIds, String[] personTypes, String[] studios, String[] artists, Guid[] excludeArtistIds, Guid[] artistIds, Guid[] albumArtistIds, Guid[] contributingArtistIds, String[] albums, Guid[] albumIds, Guid[] ids, VideoType[] videoTypes, String minOfficialRating, Nullable`1 isLocked, Nullable`1 isPlaceHolder, Nullable`1 hasOfficialRating, Nullable`1 collapseBoxSetItems, Nullable`1 minWidth, Nullable`1 minHeight, Nullable`1 maxWidth, Nullable`1 maxHeight, Nullable`1 is3D, SeriesStatus[] seriesStatus, String nameStartsWithOrGreater, String nameStartsWith, String nameLessThan, Guid[] studioIds, Guid[] genreIds, Boolean enableTotalRecordCount, Nullable`1 enableImages)
+   at lambda_method935(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Jellyfin.Server.Middleware.ServerStartupMessageMiddleware.Invoke(HttpContext httpContext, IServerApplicationHost serverApplicationHost, ILocalizationManager localizationManager)
+   at Jellyfin.Server.Middleware.WebSocketHandlerMiddleware.Invoke(HttpContext httpContext, IWebSocketManager webSocketManager)
+   at Jellyfin.Server.Middleware.IpBasedAccessValidationMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager)
+   at Jellyfin.Server.Middleware.LanFilteringMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager, IServerConfigurationManager serverConfigurationManager)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.QueryStringDecodingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.ReDoc.ReDocMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.RobotsRedirectionMiddleware.Invoke(HttpContext httpContext)
+   at Jellyfin.Server.Middleware.LegacyEmbyRouteRewriteMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.InvokeCore(HttpContext context)
+   at Jellyfin.Server.Middleware.ResponseTimeMiddleware.Invoke(HttpContext context, IServerConfigurationManager serverConfigurationManager)
+   at Jellyfin.Server.Middleware.ExceptionMiddleware.Invoke(HttpContext context)
+[2023-09-13 18:32:51.362 +08:00] [ERR] [12] Jellyfin.Server.Middleware.ExceptionMiddleware: Error processing request: "Could not find a part of the path '/run/s6-rc:s6-rc-init:kOHdDG/servicedirs/svc-jellyfin/\"/config\"'". URL "GET" "/Environment/DirectoryContents".
+[2023-09-13 18:33:00.417 +08:00] [ERR] [71] Jellyfin.Server.Middleware.ExceptionMiddleware: Error processing request: "Stale file handle : '/data/tvshows'". URL "GET" "/Environment/DirectoryContents".
+[2023-09-13 18:33:12.983 +08:00] [ERR] [12] Jellyfin.Server.Middleware.ExceptionMiddleware: Error processing request: "Stale file handle : '/data/tvshows'". URL "GET" "/Environment/DirectoryContents".
+[2023-09-13 18:33:26.381 +08:00] [ERR] [12] Jellyfin.Server.Middleware.ExceptionMiddleware: Error processing request: "Could not find a part of the path '/run/s6-rc:s6-rc-init:kOHdDG/servicedirs/svc-jellyfin/\"/config/data/data\"'". URL "GET" "/Environment/DirectoryContents".
+[2023-09-13 18:34:02.525 +08:00] [INF] [10] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Scan Media Library"
+[2023-09-13 18:34:02.525 +08:00] [INF] [10] Emby.Server.Implementations.Library.LibraryManager: Validating media library
+[2023-09-13 18:34:02.552 +08:00] [ERR] [58] Emby.Server.Implementations.Library.LibraryManager: Error running post-scan task
+System.ArgumentException: Not enough valid pictures provided to create a splashscreen!
+   at Jellyfin.Drawing.Skia.SplashscreenBuilder.GenerateCollage(IReadOnlyList`1 posters, IReadOnlyList`1 backdrops)
+   at Jellyfin.Drawing.Skia.SplashscreenBuilder.GenerateSplash(IReadOnlyList`1 posters, IReadOnlyList`1 backdrops, String outputPath)
+   at Jellyfin.Drawing.Skia.SkiaEncoder.CreateSplashscreen(IReadOnlyList`1 posters, IReadOnlyList`1 backdrops)
+   at Emby.Server.Implementations.Library.SplashscreenPostScanTask.Run(IProgress`1 progress, CancellationToken cancellationToken)
+   at Emby.Server.Implementations.Library.LibraryManager.RunPostScanTasks(IProgress`1 progress, CancellationToken cancellationToken)
+[2023-09-13 18:34:02.554 +08:00] [INF] [58] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Scan Media Library" Completed after 0 minute(s) and 0 seconds
+[2023-09-13 18:34:02.554 +08:00] [INF] [58] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-09-13 18:34:15.697 +08:00] [ERR] [57] Jellyfin.Server.Middleware.ExceptionMiddleware: Error processing request: "Stale file handle : '/data/tvshows'". URL "GET" "/Environment/DirectoryContents".
+[2023-09-13 18:35:45.359 +08:00] [ERR] [70] Jellyfin.Server.Middleware.ExceptionMiddleware: Error processing request: "Stale file handle : '/data/movies'". URL "GET" "/Environment/DirectoryContents".
+[2023-09-13 18:36:14.658 +08:00] [ERR] [10] Emby.Server.Implementations.IO.ManagedFileSystem: Reading the file at "/dev/core" failed due to a permissions exception.
+System.UnauthorizedAccessException: Access to the path '/dev/core' is denied.
+ ---> System.IO.IOException: Permission denied
+   --- End of inner exception stack trace ---
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Interop.CheckIo(Error error, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFileSystemMetadata(FileSystemInfo info)
+[2023-09-13 18:36:14.659 +08:00] [ERR] [10] Emby.Server.Implementations.IO.ManagedFileSystem: Reading the file at "/dev/stderr" failed due to a permissions exception.
+System.UnauthorizedAccessException: Access to the path '/dev/stderr' is denied.
+ ---> System.IO.IOException: Permission denied
+   --- End of inner exception stack trace ---
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Interop.CheckIo(Error error, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFileSystemMetadata(FileSystemInfo info)
+[2023-09-13 18:36:14.659 +08:00] [ERR] [10] Emby.Server.Implementations.IO.ManagedFileSystem: Reading the file at "/dev/stdout" failed due to a permissions exception.
+System.UnauthorizedAccessException: Access to the path '/dev/stdout' is denied.
+ ---> System.IO.IOException: Permission denied
+   --- End of inner exception stack trace ---
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Interop.CheckIo(Error error, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFileSystemMetadata(FileSystemInfo info)
+[2023-09-13 18:36:14.671 +08:00] [ERR] [10] Jellyfin.Server.Middleware.ExceptionMiddleware: Error processing request. URL "GET" "/Environment/DirectoryContents".
+System.NotSupportedException: Stream does not support seeking. The unsupported member type is located on type 'MediaBrowser.Model.IO.FileSystemEntryInfo'. Path: $.
+ ---> System.NotSupportedException: Stream does not support seeking.
+   at System.IO.RandomAccess.ValidateInput(SafeFileHandle handle, Int64 fileOffset)
+   at Emby.Server.Implementations.IO.ManagedFileSystem.GetFileSystemMetadata(FileSystemInfo info)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.ToArray()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator()+MoveNext()
+   at System.Linq.Enumerable.SelectIPartitionIterator`2.MoveNext()
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException(WriteStack& state, NotSupportedException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCoreAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteCore[TValue](JsonConverter jsonConverter, Utf8JsonWriter writer, TValue& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Jellyfin.Server.Middleware.ServerStartupMessageMiddleware.Invoke(HttpContext httpContext, IServerApplicationHost serverApplicationHost, ILocalizationManager localizationManager)
+   at Jellyfin.Server.Middleware.WebSocketHandlerMiddleware.Invoke(HttpContext httpContext, IWebSocketManager webSocketManager)
+   at Jellyfin.Server.Middleware.IpBasedAccessValidationMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager)
+   at Jellyfin.Server.Middleware.LanFilteringMiddleware.Invoke(HttpContext httpContext, INetworkManager networkManager, IServerConfigurationManager serverConfigurationManager)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.QueryStringDecodingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.ReDoc.ReDocMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Jellyfin.Server.Middleware.RobotsRedirectionMiddleware.Invoke(HttpContext httpContext)
+   at Jellyfin.Server.Middleware.LegacyEmbyRouteRewriteMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.InvokeCore(HttpContext context)
+   at Jellyfin.Server.Middleware.ResponseTimeMiddleware.Invoke(HttpContext context, IServerConfigurationManager serverConfigurationManager)
+   at Jellyfin.Server.Middleware.ExceptionMiddleware.Invoke(HttpContext context)
+[2023-09-13 18:36:32.313 +08:00] [ERR] [70] Jellyfin.Server.Middleware.ExceptionMiddleware: Error processing request: "Could not find a part of the path '/run/s6-rc:s6-rc-init:kOHdDG/servicedirs/svc-jellyfin/\"/\"'". URL "GET" "/Environment/DirectoryContents".
+[2023-09-13 18:36:48.530 +08:00] [ERR] [71] Jellyfin.Server.Middleware.ExceptionMiddleware: Error processing request: "Could not find a part of the path '/run/s6-rc:s6-rc-init:kOHdDG/servicedirs/svc-jellyfin/\"/\"'". URL "GET" "/Environment/DirectoryContents".
+[2023-09-13 18:37:14.525 +08:00] [ERR] [11] Jellyfin.Server.Middleware.ExceptionMiddleware: Error processing request: "Could not find a part of the path '/run/s6-rc:s6-rc-init:kOHdDG/servicedirs/svc-jellyfin/\"/\"'". URL "GET" "/Environment/DirectoryContents".
+[2023-09-13 18:37:48.617 +08:00] [ERR] [18] Jellyfin.Server.Middleware.ExceptionMiddleware: Error processing request: "Stale file handle : '/data/tvshows'". URL "GET" "/Environment/DirectoryContents".
+[2023-09-13 18:38:04.285 +08:00] [INF] [2] Main: Received a SIGTERM signal, shutting down
+[2023-09-13 18:38:04.285 +08:00] [INF] [2] Main: Running query planner optimizations in the database... This might take a while
+[2023-09-13 18:38:04.361 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "CoreAppHost"
+[2023-09-13 18:38:04.363 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "NotificationEntryPoint"
+[2023-09-13 18:38:04.367 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "UdpServerEntryPoint"
+[2023-09-13 18:38:04.368 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "LibraryMonitorStartup"
+[2023-09-13 18:38:04.368 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "ExternalPortForwarding"
+[2023-09-13 18:38:04.371 +08:00] [INF] [2] Emby.Server.Implementations.EntryPoints.ExternalPortForwarding: Stopping NAT discovery
+[2023-09-13 18:38:04.374 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "SchedulesDirect"
+[2023-09-13 18:38:04.375 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "LibraryChangedNotifier"
+[2023-09-13 18:38:04.376 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "DeviceAccessEntryPoint"
+[2023-09-13 18:38:04.376 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EntryPoint"
+[2023-09-13 18:38:04.376 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "MusicBrainzAlbumProvider"
+[2023-09-13 18:38:04.379 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "DlnaEntryPoint"
+[2023-09-13 18:38:04.381 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing PlayToManager
+[2023-09-13 18:38:04.382 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing DeviceDiscovery
+[2023-09-13 18:38:04.382 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing SsdpCommunicationsServer
+[2023-09-13 18:38:04.382 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing _BroadcastListenSocket
+[2023-09-13 18:38:04.385 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" Disposing 3 sendSockets
+[2023-09-13 18:38:04.385 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "0.0.0.0"
+[2023-09-13 18:38:04.385 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "172.26.0.6"
+[2023-09-13 18:38:04.385 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "127.0.0.1"
+[2023-09-13 18:38:04.385 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EmbyTV"
+[2023-09-13 18:38:04.387 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EntryPoint"
+[2023-09-13 18:38:04.387 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "RecordingNotifier"
+[2023-09-13 18:38:04.388 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "UserDataChangeNotifier"
+[2023-09-13 18:38:27.560 +08:00] [INF] [1] Main: Jellyfin version: "10.8.10"
+[2023-09-13 18:38:27.655 +08:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_PublishedServerUrl, 192.168.50.111/jellyfin]", "[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]"]
+[2023-09-13 18:38:27.658 +08:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2023-09-13 18:38:27.658 +08:00] [INF] [1] Main: Operating system: "Linux"
+[2023-09-13 18:38:27.658 +08:00] [INF] [1] Main: Architecture: X64
+[2023-09-13 18:38:27.659 +08:00] [INF] [1] Main: 64-Bit Process: True
+[2023-09-13 18:38:27.659 +08:00] [INF] [1] Main: User Interactive: True
+[2023-09-13 18:38:27.659 +08:00] [INF] [1] Main: Processor count: 6
+[2023-09-13 18:38:27.659 +08:00] [INF] [1] Main: Program data path: "/config/data"
+[2023-09-13 18:38:27.659 +08:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2023-09-13 18:38:27.659 +08:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2023-09-13 18:38:28.027 +08:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2023-09-13 18:38:28.110 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2023-09-13 18:38:28.300 +08:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-09-13 18:38:28.300 +08:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2023-09-13 18:38:28.301 +08:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-09-13 18:38:28.306 +08:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2023-09-13 18:38:28.307 +08:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2023-09-13 18:38:30.310 +08:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "TMDb" "10.8.10.0"
+[2023-09-13 18:38:30.310 +08:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "Studio Images" "10.8.10.0"
+[2023-09-13 18:38:30.311 +08:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "OMDb" "10.8.10.0"
+[2023-09-13 18:38:30.311 +08:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "MusicBrainz" "10.8.10.0"
+[2023-09-13 18:38:30.312 +08:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "AudioDB" "10.8.10.0"
+[2023-09-13 18:38:30.402 +08:00] [INF] [1] Main: Kestrel listening on "Any IP4 Address"
+[2023-09-13 18:38:30.546 +08:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.Repositories.EphemeralXmlRepository: Using an in-memory repository. Keys will not be persisted to storage.
+[2023-09-13 18:38:30.546 +08:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+[2023-09-13 18:38:30.796 +08:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: No XML encryptor configured. Key {307fd045-b073-4151-9b14-94b27016436e} may be persisted to storage in unencrypted form.
+[2023-09-13 18:38:30.817 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Running startup tasks
+[2023-09-13 18:38:30.858 +08:00] [INF] [1] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Extract Chapter Images" set to fire at 2023-09-14 02:00:00.000 +08:00, which is 07:21:29.1414647 from now.
+[2023-09-13 18:38:31.015 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Found ffmpeg version "5.1.3"
+[2023-09-13 18:38:31.049 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "decoders": ["libdav1d", "av1", "av1_cuvid", "av1_qsv", "h264", "h264_qsv", "h264_cuvid", "hevc", "hevc_qsv", "hevc_cuvid", "mpeg2video", "mpeg2_qsv", "mpeg2_cuvid", "mpeg4", "mpeg4_cuvid", "msmpeg4", "vc1_qsv", "vc1_cuvid", "vp8", "libvpx", "vp8_cuvid", "vp8_qsv", "vp9", "libvpx-vp9", "vp9_cuvid", "vp9_qsv", "aac", "ac3", "dca", "flac", "mp3", "truehd"]
+[2023-09-13 18:38:31.064 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "encoders": ["libx264", "h264_amf", "h264_nvenc", "h264_qsv", "h264_v4l2m2m", "h264_vaapi", "libx265", "hevc_amf", "hevc_nvenc", "hevc_qsv", "hevc_vaapi", "mpeg4", "msmpeg4", "libvpx", "libvpx-vp9", "aac", "libfdk_aac", "ac3", "dca", "flac", "libmp3lame", "libopus", "truehd", "libvorbis", "srt"]
+[2023-09-13 18:38:31.080 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available filters: ["deinterlace_qsv", "deinterlace_vaapi", "hwupload_cuda", "hwupload_vaapi", "overlay_opencl", "overlay_qsv", "overlay_vaapi", "overlay_cuda", "procamp_vaapi", "scale_cuda", "scale_opencl", "scale_qsv", "scale_vaapi", "tonemap_cuda", "tonemap_opencl", "tonemap_vaapi", "vpp_qsv", "yadif_cuda", "zscale", "alphasrc"]
+[2023-09-13 18:38:31.163 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available hwaccel types: ["cuda", "vaapi", "qsv", "drm", "opencl", "vulkan"]
+[2023-09-13 18:38:31.274 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: FFmpeg: "/usr/lib/jellyfin-ffmpeg/ffmpeg"
+[2023-09-13 18:38:31.274 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: ServerId: "3881f2680ff141aa8af3ef3029090613"
+[2023-09-13 18:38:31.368 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Executed all pre-startup entry points in 0:00:00.0864588
+[2023-09-13 18:38:31.368 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Core startup complete
+[2023-09-13 18:38:31.459 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Executed all post-startup entry points in 0:00:00.0912398
+[2023-09-13 18:38:31.459 +08:00] [INF] [1] Main: Startup complete 0:00:04.2310132
+[2023-09-13 18:38:32.320 +08:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"AccessSchedule"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:38:32.321 +08:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ActivityLog"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:38:32.321 +08:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"CustomItemDisplayPreferences"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:38:32.321 +08:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"DisplayPreferences"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:38:32.321 +08:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"HomeSection"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:38:32.321 +08:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ImageInfo"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:38:32.321 +08:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ItemDisplayPreferences"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:38:32.322 +08:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"Permission"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:38:32.322 +08:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"Preference"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:38:32.322 +08:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ApiKey"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:38:32.322 +08:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"Device"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:38:32.322 +08:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"DeviceOptions"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:38:32.322 +08:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"User"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:38:33.863 +08:00] [INF] [19] Emby.Server.Implementations.ScheduledTasks.TaskManager: "StartupTrigger" fired for task: "Update Plugins"
+[2023-09-13 18:38:33.864 +08:00] [INF] [19] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "PluginUpdateTask"
+[2023-09-13 18:38:33.866 +08:00] [INF] [8] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Update Plugins"
+[2023-09-13 18:38:34.959 +08:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 1 seconds
+[2023-09-13 18:38:34.962 +08:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-09-13 18:38:42.004 +08:00] [INF] [10] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "192.168.50.50" request
+[2023-09-13 18:38:42.749 +08:00] [INF] [10] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "192.168.50.50" closed
+[2023-09-13 18:38:45.501 +08:00] [INF] [27] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "192.168.50.50" request
+[2023-09-13 18:39:03.708 +08:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "RefreshMediaLibraryTask"
+[2023-09-13 18:39:03.709 +08:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Scan Media Library"
+[2023-09-13 18:39:03.714 +08:00] [INF] [11] Emby.Server.Implementations.Library.LibraryManager: Validating media library
+[2023-09-13 18:39:03.856 +08:00] [ERR] [11] Emby.Server.Implementations.Library.LibraryManager: Error running post-scan task
+System.ArgumentException: Not enough valid pictures provided to create a splashscreen!
+   at Jellyfin.Drawing.Skia.SplashscreenBuilder.GenerateCollage(IReadOnlyList`1 posters, IReadOnlyList`1 backdrops)
+   at Jellyfin.Drawing.Skia.SplashscreenBuilder.GenerateSplash(IReadOnlyList`1 posters, IReadOnlyList`1 backdrops, String outputPath)
+   at Jellyfin.Drawing.Skia.SkiaEncoder.CreateSplashscreen(IReadOnlyList`1 posters, IReadOnlyList`1 backdrops)
+   at Emby.Server.Implementations.Library.SplashscreenPostScanTask.Run(IProgress`1 progress, CancellationToken cancellationToken)
+   at Emby.Server.Implementations.Library.LibraryManager.RunPostScanTasks(IProgress`1 progress, CancellationToken cancellationToken)
+[2023-09-13 18:39:03.879 +08:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Scan Media Library" Completed after 0 minute(s) and 0 seconds
+[2023-09-13 18:39:03.880 +08:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-09-13 18:39:03.897 +08:00] [INF] [27] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/data/movies"
+[2023-09-13 18:39:12.378 +08:00] [INF] [11] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/data/movies"
+[2023-09-13 18:39:12.548 +08:00] [INF] [21] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "RefreshMediaLibraryTask"
+[2023-09-13 18:39:12.548 +08:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Scan Media Library"
+[2023-09-13 18:39:12.548 +08:00] [INF] [16] Emby.Server.Implementations.Library.LibraryManager: Validating media library
+[2023-09-13 18:39:12.612 +08:00] [ERR] [27] Emby.Server.Implementations.Library.LibraryManager: Error running post-scan task
+System.ArgumentException: Not enough valid pictures provided to create a splashscreen!
+   at Jellyfin.Drawing.Skia.SplashscreenBuilder.GenerateCollage(IReadOnlyList`1 posters, IReadOnlyList`1 backdrops)
+   at Jellyfin.Drawing.Skia.SplashscreenBuilder.GenerateSplash(IReadOnlyList`1 posters, IReadOnlyList`1 backdrops, String outputPath)
+   at Jellyfin.Drawing.Skia.SkiaEncoder.CreateSplashscreen(IReadOnlyList`1 posters, IReadOnlyList`1 backdrops)
+   at Emby.Server.Implementations.Library.SplashscreenPostScanTask.Run(IProgress`1 progress, CancellationToken cancellationToken)
+   at Emby.Server.Implementations.Library.LibraryManager.RunPostScanTasks(IProgress`1 progress, CancellationToken cancellationToken)
+[2023-09-13 18:39:12.614 +08:00] [INF] [27] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Scan Media Library" Completed after 0 minute(s) and 0 seconds
+[2023-09-13 18:39:12.615 +08:00] [INF] [27] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-09-13 18:39:12.644 +08:00] [INF] [21] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/data/movies"
+[2023-09-13 18:39:12.644 +08:00] [INF] [22] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/data/tvshows"
+[2023-09-13 18:39:14.112 +08:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Scan Media Library"
+[2023-09-13 18:39:14.112 +08:00] [INF] [16] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/data/movies"
+[2023-09-13 18:39:14.112 +08:00] [INF] [16] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/data/tvshows"
+[2023-09-13 18:39:14.112 +08:00] [INF] [16] Emby.Server.Implementations.Library.LibraryManager: Validating media library
+[2023-09-13 18:39:14.141 +08:00] [ERR] [21] Emby.Server.Implementations.Library.LibraryManager: Error running post-scan task
+System.ArgumentException: Not enough valid pictures provided to create a splashscreen!
+   at Jellyfin.Drawing.Skia.SplashscreenBuilder.GenerateCollage(IReadOnlyList`1 posters, IReadOnlyList`1 backdrops)
+   at Jellyfin.Drawing.Skia.SplashscreenBuilder.GenerateSplash(IReadOnlyList`1 posters, IReadOnlyList`1 backdrops, String outputPath)
+   at Jellyfin.Drawing.Skia.SkiaEncoder.CreateSplashscreen(IReadOnlyList`1 posters, IReadOnlyList`1 backdrops)
+   at Emby.Server.Implementations.Library.SplashscreenPostScanTask.Run(IProgress`1 progress, CancellationToken cancellationToken)
+   at Emby.Server.Implementations.Library.LibraryManager.RunPostScanTasks(IProgress`1 progress, CancellationToken cancellationToken)
+[2023-09-13 18:39:14.143 +08:00] [INF] [21] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Scan Media Library" Completed after 0 minute(s) and 0 seconds
+[2023-09-13 18:39:14.143 +08:00] [INF] [21] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-09-13 18:39:14.158 +08:00] [INF] [13] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/data/tvshows"
+[2023-09-13 18:39:14.158 +08:00] [INF] [27] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/data/movies"
+[2023-09-13 18:40:45.033 +08:00] [INF] [2] Main: Received a SIGTERM signal, shutting down
+[2023-09-13 18:40:45.047 +08:00] [INF] [2] Main: Running query planner optimizations in the database... This might take a while
+[2023-09-13 18:40:45.134 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "CoreAppHost"
+[2023-09-13 18:40:45.135 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EntryPoint"
+[2023-09-13 18:40:45.137 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EntryPoint"
+[2023-09-13 18:40:45.137 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "UserDataChangeNotifier"
+[2023-09-13 18:40:45.137 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "MusicBrainzAlbumProvider"
+[2023-09-13 18:40:45.149 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "ExternalPortForwarding"
+[2023-09-13 18:40:45.150 +08:00] [INF] [2] Emby.Server.Implementations.EntryPoints.ExternalPortForwarding: Stopping NAT discovery
+[2023-09-13 18:40:45.152 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "LibraryChangedNotifier"
+[2023-09-13 18:40:45.153 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "RecordingNotifier"
+[2023-09-13 18:40:45.153 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "DeviceAccessEntryPoint"
+[2023-09-13 18:40:45.154 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "SchedulesDirect"
+[2023-09-13 18:40:45.154 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EmbyTV"
+[2023-09-13 18:40:45.154 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "NotificationEntryPoint"
+[2023-09-13 18:40:45.169 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "LibraryMonitorStartup"
+[2023-09-13 18:40:45.169 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "UdpServerEntryPoint"
+[2023-09-13 18:40:45.169 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "DlnaEntryPoint"
+[2023-09-13 18:40:45.170 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing PlayToManager
+[2023-09-13 18:40:45.172 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing DeviceDiscovery
+[2023-09-13 18:40:45.173 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing SsdpCommunicationsServer
+[2023-09-13 18:40:45.173 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing _BroadcastListenSocket
+[2023-09-13 18:40:45.176 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" Disposing 3 sendSockets
+[2023-09-13 18:40:45.176 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "0.0.0.0"
+[2023-09-13 18:40:45.176 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "172.18.0.3"
+[2023-09-13 18:40:45.176 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "127.0.0.1"
+[2023-09-13 18:41:40.906 +08:00] [INF] [1] Main: Jellyfin version: "10.8.10"
+[2023-09-13 18:41:40.927 +08:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]", "[JELLYFIN_PublishedServerUrl, 192.168.50.111/jellyfin]"]
+[2023-09-13 18:41:40.930 +08:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2023-09-13 18:41:40.930 +08:00] [INF] [1] Main: Operating system: "Linux"
+[2023-09-13 18:41:40.931 +08:00] [INF] [1] Main: Architecture: X64
+[2023-09-13 18:41:40.931 +08:00] [INF] [1] Main: 64-Bit Process: True
+[2023-09-13 18:41:40.931 +08:00] [INF] [1] Main: User Interactive: True
+[2023-09-13 18:41:40.931 +08:00] [INF] [1] Main: Processor count: 6
+[2023-09-13 18:41:40.931 +08:00] [INF] [1] Main: Program data path: "/config/data"
+[2023-09-13 18:41:40.931 +08:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2023-09-13 18:41:40.931 +08:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2023-09-13 18:41:41.095 +08:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2023-09-13 18:41:41.111 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2023-09-13 18:41:41.231 +08:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-09-13 18:41:41.231 +08:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2023-09-13 18:41:41.231 +08:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-09-13 18:41:41.237 +08:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2023-09-13 18:41:41.237 +08:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2023-09-13 18:41:42.961 +08:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "TMDb" "10.8.10.0"
+[2023-09-13 18:41:42.961 +08:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "Studio Images" "10.8.10.0"
+[2023-09-13 18:41:42.961 +08:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "OMDb" "10.8.10.0"
+[2023-09-13 18:41:42.962 +08:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "MusicBrainz" "10.8.10.0"
+[2023-09-13 18:41:42.962 +08:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "AudioDB" "10.8.10.0"
+[2023-09-13 18:41:43.012 +08:00] [INF] [1] Main: Kestrel listening on "Any IP4 Address"
+[2023-09-13 18:41:43.058 +08:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.Repositories.EphemeralXmlRepository: Using an in-memory repository. Keys will not be persisted to storage.
+[2023-09-13 18:41:43.058 +08:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+[2023-09-13 18:41:43.276 +08:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: No XML encryptor configured. Key {116112af-93ee-4a3e-902f-9b1abf748a5c} may be persisted to storage in unencrypted form.
+[2023-09-13 18:41:43.294 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Running startup tasks
+[2023-09-13 18:41:43.331 +08:00] [INF] [1] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Extract Chapter Images" set to fire at 2023-09-14 02:00:00.000 +08:00, which is 07:18:16.6690332 from now.
+[2023-09-13 18:41:43.371 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Found ffmpeg version "5.1.3"
+[2023-09-13 18:41:43.398 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "decoders": ["libdav1d", "av1", "av1_cuvid", "av1_qsv", "h264", "h264_qsv", "h264_cuvid", "hevc", "hevc_qsv", "hevc_cuvid", "mpeg2video", "mpeg2_qsv", "mpeg2_cuvid", "mpeg4", "mpeg4_cuvid", "msmpeg4", "vc1_qsv", "vc1_cuvid", "vp8", "libvpx", "vp8_cuvid", "vp8_qsv", "vp9", "libvpx-vp9", "vp9_cuvid", "vp9_qsv", "aac", "ac3", "dca", "flac", "mp3", "truehd"]
+[2023-09-13 18:41:43.413 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "encoders": ["libx264", "h264_amf", "h264_nvenc", "h264_qsv", "h264_v4l2m2m", "h264_vaapi", "libx265", "hevc_amf", "hevc_nvenc", "hevc_qsv", "hevc_vaapi", "mpeg4", "msmpeg4", "libvpx", "libvpx-vp9", "aac", "libfdk_aac", "ac3", "dca", "flac", "libmp3lame", "libopus", "truehd", "libvorbis", "srt"]
+[2023-09-13 18:41:43.429 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available filters: ["deinterlace_qsv", "deinterlace_vaapi", "hwupload_cuda", "hwupload_vaapi", "overlay_opencl", "overlay_qsv", "overlay_vaapi", "overlay_cuda", "procamp_vaapi", "scale_cuda", "scale_opencl", "scale_qsv", "scale_vaapi", "tonemap_cuda", "tonemap_opencl", "tonemap_vaapi", "vpp_qsv", "yadif_cuda", "zscale", "alphasrc"]
+[2023-09-13 18:41:43.508 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available hwaccel types: ["cuda", "vaapi", "qsv", "drm", "opencl", "vulkan"]
+[2023-09-13 18:41:43.606 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: FFmpeg: "/usr/lib/jellyfin-ffmpeg/ffmpeg"
+[2023-09-13 18:41:43.607 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: ServerId: "3881f2680ff141aa8af3ef3029090613"
+[2023-09-13 18:41:43.705 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Executed all pre-startup entry points in 0:00:00.0898597
+[2023-09-13 18:41:43.706 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Core startup complete
+[2023-09-13 18:41:43.891 +08:00] [INF] [17] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/data/tvshows"
+[2023-09-13 18:41:43.897 +08:00] [INF] [8] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/data/movies"
+[2023-09-13 18:41:43.901 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Executed all post-startup entry points in 0:00:00.195094
+[2023-09-13 18:41:43.902 +08:00] [INF] [1] Main: Startup complete 0:00:03.1540715
+[2023-09-13 18:41:43.954 +08:00] [WRN] [17] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"AccessSchedule"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:41:43.955 +08:00] [WRN] [17] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ActivityLog"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:41:43.955 +08:00] [WRN] [17] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"CustomItemDisplayPreferences"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:41:43.955 +08:00] [WRN] [17] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"DisplayPreferences"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:41:43.955 +08:00] [WRN] [17] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"HomeSection"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:41:43.955 +08:00] [WRN] [17] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ImageInfo"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:41:43.955 +08:00] [WRN] [17] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ItemDisplayPreferences"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:41:43.955 +08:00] [WRN] [17] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"Permission"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:41:43.955 +08:00] [WRN] [17] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"Preference"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:41:43.955 +08:00] [WRN] [17] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ApiKey"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:41:43.955 +08:00] [WRN] [17] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"Device"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:41:43.955 +08:00] [WRN] [17] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"DeviceOptions"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:41:43.955 +08:00] [WRN] [17] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"User"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 18:41:46.335 +08:00] [INF] [17] Emby.Server.Implementations.ScheduledTasks.TaskManager: "StartupTrigger" fired for task: "Update Plugins"
+[2023-09-13 18:41:46.335 +08:00] [INF] [17] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "PluginUpdateTask"
+[2023-09-13 18:41:46.337 +08:00] [INF] [21] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Update Plugins"
+[2023-09-13 18:41:47.296 +08:00] [INF] [17] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "192.168.50.50" request
+[2023-09-13 18:41:47.379 +08:00] [INF] [17] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 1 seconds
+[2023-09-13 18:41:47.383 +08:00] [INF] [17] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-09-13 18:41:58.550 +08:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Scan Media Library"
+[2023-09-13 18:41:58.562 +08:00] [INF] [11] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/data/tvshows"
+[2023-09-13 18:41:58.562 +08:00] [INF] [11] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/data/movies"
+[2023-09-13 18:41:58.564 +08:00] [INF] [11] Emby.Server.Implementations.Library.LibraryManager: Validating media library
+[2023-09-13 18:42:04.812 +08:00] [INF] [26] Emby.Drawing.ImageProcessor: Creating image collage and saving to "/config/cache/temp/f8d9bd6804ca475e8b89e33123b5e13b.png"
+[2023-09-13 18:42:05.020 +08:00] [INF] [26] Emby.Drawing.ImageProcessor: Completed creation of image collage and saved to "/config/cache/temp/f8d9bd6804ca475e8b89e33123b5e13b.png"
+[2023-09-13 18:42:05.118 +08:00] [INF] [25] Emby.Drawing.ImageProcessor: Creating image collage and saving to "/config/cache/temp/30519220e48c4808a52858461acc4f39.png"
+[2023-09-13 18:42:05.320 +08:00] [INF] [25] Emby.Drawing.ImageProcessor: Completed creation of image collage and saved to "/config/cache/temp/30519220e48c4808a52858461acc4f39.png"
+[2023-09-13 18:42:09.383 +08:00] [INF] [21] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Scan Media Library" Completed after 0 minute(s) and 10 seconds
+[2023-09-13 18:42:09.385 +08:00] [INF] [21] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-09-13 18:42:09.401 +08:00] [INF] [25] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/data/movies"
+[2023-09-13 18:42:09.402 +08:00] [INF] [10] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/data/tvshows"
+[2023-09-13 18:43:35.333 +08:00] [INF] [19] Emby.Server.Implementations.Session.SessionWebSocketListener: Sending ForceKeepAlive message to 1 inactive WebSockets.
+[2023-09-13 18:43:47.332 +08:00] [INF] [13] Emby.Server.Implementations.Session.SessionWebSocketListener: Sending ForceKeepAlive message to 1 inactive WebSockets.
+[2023-09-13 18:43:59.334 +08:00] [INF] [19] Emby.Server.Implementations.Session.SessionWebSocketListener: Lost 1 WebSockets.
+[2023-09-13 18:57:12.512 +08:00] [WRN] [88] Emby.Server.Implementations.HttpServer.WebSocketConnection: WS "192.168.50.50" error receiving data: "The remote party closed the WebSocket connection without completing the close handshake."
+[2023-09-13 18:57:12.553 +08:00] [INF] [88] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "192.168.50.50" closed
+[2023-09-13 18:57:28.266 +08:00] [INF] [91] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "192.168.50.50" request
+[2023-09-13 18:57:46.470 +08:00] [INF] [89] Jellyfin.Api.Helpers.MediaInfoHelper: User policy for "zhao". EnablePlaybackRemuxing: True EnableVideoPlaybackTranscoding: True EnableAudioPlaybackTranscoding: True
+[2023-09-13 18:57:46.531 +08:00] [INF] [89] Jellyfin.Api.Helpers.MediaInfoHelper: StreamBuilder.BuildVideoItem( Profile="Anonymous Profile", Path="/data/movies/Oppenheimer (2023) 1080p V2 HDTS ENG x264 AAC - HushRips.mkv", AudioStreamIndex=1, SubtitleStreamIndex=-1 ) => ( PlayMethod=Transcode, TranscodeReason=VideoCodecNotSupported, AudioCodecNotSupported ) "media:/videos/87ab02dc-9be6-a759-81f6-afa83223a005/master.m3u8?MediaSourceId=87ab02dc9be6a75981f6afa83223a005&VideoCodec=h264,h264&AudioCodec=aac&AudioStreamIndex=1&VideoBitrate=139808000&AudioBitrate=192000&AudioSampleRate=48000&MaxFramerate=24&api_key=<token>&SubtitleMethod=Encode&TranscodingMaxAudioChannels=2&RequireAvc=false&Tag=d101f60ebbad2f49bac2f4380f1d3026&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&h264-level=40&h264-videobitdepth=8&h264-profile=main&h264-audiochannels=2&aac-profile=lc&h264-rangetype=SDR&h264-deinterlace=true&TranscodeReasons=VideoCodecNotSupported,%20AudioCodecNotSupported"
+[2023-09-13 18:57:50.994 +08:00] [INF] [85] Jellyfin.Api.Controllers.DynamicHlsController: Current HLS implementation doesn't support non-keyframe breaks but one is requested, ignoring that request
+[2023-09-13 18:57:51.010 +08:00] [INF] [85] Jellyfin.Api.Helpers.TranscodingJobHelper: "/usr/lib/jellyfin-ffmpeg/ffmpeg" "-analyzeduration 200M -fflags +genpts -f matroska,webm  -i file:\"/data/movies/Oppenheimer (2023) 1080p V2 HDTS ENG x264 AAC - HushRips.mkv\" -map_metadata -1 -map_chapters -1 -threads 0 -map 0:0 -map 0:1 -map -0:s -codec:v:0 copy -bsf:v h264_mp4toannexb -start_at_zero -codec:a:0 copy -copyts -avoid_negative_ts disabled -max_muxing_queue_size 2048 -f hls -max_delay 5000000 -hls_time 6 -hls_segment_type mpegts -start_number 0 -hls_segment_filename \"/config/data/transcodes/9dc181d22db36b6a4595e100e5f89664%d.ts\" -hls_playlist_type vod -hls_list_size 0 -y \"/config/data/transcodes/9dc181d22db36b6a4595e100e5f89664.m3u8\""
+[2023-09-13 18:58:00.499 +08:00] [INF] [92] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "192.168.50.50" closed
+[2023-09-13 18:58:00.505 +08:00] [ERR] [86] Jellyfin.Server.Middleware.ExceptionMiddleware: Error processing request: "Unexpected end of request content". URL "POST" "/Sessions/Playing/Stopped".
+[2023-09-13 18:58:00.509 +08:00] [WRN] [86] Jellyfin.Server.Middleware.ResponseTimeMiddleware: Slow HTTP Response from "http://192.168.50.111:8096/Sessions/Playing/Stopped" to "192.168.50.50" in 0:00:00.7090586 with Status Code 500
+[2023-09-13 18:58:09.096 +08:00] [INF] [81] Jellyfin.Api.Helpers.TranscodingJobHelper: FFmpeg exited with code 0
+[2023-09-13 19:15:16.525 +08:00] [INF] [2] Main: Received a SIGTERM signal, shutting down
+[2023-09-13 19:15:16.549 +08:00] [INF] [2] Main: Running query planner optimizations in the database... This might take a while
+[2023-09-13 19:15:16.597 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "CoreAppHost"
+[2023-09-13 19:15:16.598 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EntryPoint"
+[2023-09-13 19:15:16.607 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EntryPoint"
+[2023-09-13 19:15:16.607 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "UserDataChangeNotifier"
+[2023-09-13 19:15:16.616 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "MusicBrainzAlbumProvider"
+[2023-09-13 19:15:16.617 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "ExternalPortForwarding"
+[2023-09-13 19:15:16.619 +08:00] [INF] [2] Emby.Server.Implementations.EntryPoints.ExternalPortForwarding: Stopping NAT discovery
+[2023-09-13 19:15:16.623 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "LibraryChangedNotifier"
+[2023-09-13 19:15:16.624 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "RecordingNotifier"
+[2023-09-13 19:15:16.625 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "DeviceAccessEntryPoint"
+[2023-09-13 19:15:16.626 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "SchedulesDirect"
+[2023-09-13 19:15:16.626 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EmbyTV"
+[2023-09-13 19:15:16.628 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "NotificationEntryPoint"
+[2023-09-13 19:15:16.631 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "LibraryMonitorStartup"
+[2023-09-13 19:15:16.631 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "UdpServerEntryPoint"
+[2023-09-13 19:15:16.635 +08:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "DlnaEntryPoint"
+[2023-09-13 19:15:16.637 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing PlayToManager
+[2023-09-13 19:15:16.637 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing DeviceDiscovery
+[2023-09-13 19:15:16.638 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing SsdpCommunicationsServer
+[2023-09-13 19:15:16.638 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing _BroadcastListenSocket
+[2023-09-13 19:15:16.639 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" Disposing 3 sendSockets
+[2023-09-13 19:15:16.642 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "0.0.0.0"
+[2023-09-13 19:15:16.643 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "172.23.0.5"
+[2023-09-13 19:15:16.695 +08:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "127.0.0.1"
+[2023-09-13 19:15:31.622 +08:00] [INF] [1] Main: Jellyfin version: "10.8.10"
+[2023-09-13 19:15:31.703 +08:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_PublishedServerUrl, 192.168.50.111/jellyfin]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]"]
+[2023-09-13 19:15:31.705 +08:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2023-09-13 19:15:31.706 +08:00] [INF] [1] Main: Operating system: "Linux"
+[2023-09-13 19:15:31.706 +08:00] [INF] [1] Main: Architecture: X64
+[2023-09-13 19:15:31.706 +08:00] [INF] [1] Main: 64-Bit Process: True
+[2023-09-13 19:15:31.706 +08:00] [INF] [1] Main: User Interactive: True
+[2023-09-13 19:15:31.707 +08:00] [INF] [1] Main: Processor count: 6
+[2023-09-13 19:15:31.707 +08:00] [INF] [1] Main: Program data path: "/config/data"
+[2023-09-13 19:15:31.707 +08:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2023-09-13 19:15:31.707 +08:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2023-09-13 19:15:31.994 +08:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2023-09-13 19:15:32.071 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2023-09-13 19:15:32.257 +08:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-09-13 19:15:32.257 +08:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2023-09-13 19:15:32.257 +08:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-09-13 19:15:32.263 +08:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2023-09-13 19:15:32.263 +08:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2023-09-13 19:15:34.303 +08:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "TMDb" "10.8.10.0"
+[2023-09-13 19:15:34.304 +08:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "Studio Images" "10.8.10.0"
+[2023-09-13 19:15:34.305 +08:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "OMDb" "10.8.10.0"
+[2023-09-13 19:15:34.305 +08:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "MusicBrainz" "10.8.10.0"
+[2023-09-13 19:15:34.305 +08:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "AudioDB" "10.8.10.0"
+[2023-09-13 19:15:34.371 +08:00] [INF] [1] Main: Kestrel listening on "Any IP4 Address"
+[2023-09-13 19:15:34.620 +08:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.Repositories.EphemeralXmlRepository: Using an in-memory repository. Keys will not be persisted to storage.
+[2023-09-13 19:15:34.621 +08:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+[2023-09-13 19:15:34.903 +08:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: No XML encryptor configured. Key {39f4a120-3d22-47c3-a391-eb3e6be940a7} may be persisted to storage in unencrypted form.
+[2023-09-13 19:15:34.929 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Running startup tasks
+[2023-09-13 19:15:34.980 +08:00] [INF] [1] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Extract Chapter Images" set to fire at 2023-09-14 02:00:00.000 +08:00, which is 06:44:25.0200049 from now.
+[2023-09-13 19:15:35.158 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Found ffmpeg version "5.1.3"
+[2023-09-13 19:15:35.193 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "decoders": ["libdav1d", "av1", "av1_cuvid", "av1_qsv", "h264", "h264_qsv", "h264_cuvid", "hevc", "hevc_qsv", "hevc_cuvid", "mpeg2video", "mpeg2_qsv", "mpeg2_cuvid", "mpeg4", "mpeg4_cuvid", "msmpeg4", "vc1_qsv", "vc1_cuvid", "vp8", "libvpx", "vp8_cuvid", "vp8_qsv", "vp9", "libvpx-vp9", "vp9_cuvid", "vp9_qsv", "aac", "ac3", "dca", "flac", "mp3", "truehd"]
+[2023-09-13 19:15:35.209 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "encoders": ["libx264", "h264_amf", "h264_nvenc", "h264_qsv", "h264_v4l2m2m", "h264_vaapi", "libx265", "hevc_amf", "hevc_nvenc", "hevc_qsv", "hevc_vaapi", "mpeg4", "msmpeg4", "libvpx", "libvpx-vp9", "aac", "libfdk_aac", "ac3", "dca", "flac", "libmp3lame", "libopus", "truehd", "libvorbis", "srt"]
+[2023-09-13 19:15:35.226 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available filters: ["deinterlace_qsv", "deinterlace_vaapi", "hwupload_cuda", "hwupload_vaapi", "overlay_opencl", "overlay_qsv", "overlay_vaapi", "overlay_cuda", "procamp_vaapi", "scale_cuda", "scale_opencl", "scale_qsv", "scale_vaapi", "tonemap_cuda", "tonemap_opencl", "tonemap_vaapi", "vpp_qsv", "yadif_cuda", "zscale", "alphasrc"]
+[2023-09-13 19:15:35.327 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available hwaccel types: ["cuda", "vaapi", "qsv", "drm", "opencl", "vulkan"]
+[2023-09-13 19:15:35.471 +08:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: FFmpeg: "/usr/lib/jellyfin-ffmpeg/ffmpeg"
+[2023-09-13 19:15:35.472 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: ServerId: "3881f2680ff141aa8af3ef3029090613"
+[2023-09-13 19:15:35.594 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Executed all pre-startup entry points in 0:00:00.1119268
+[2023-09-13 19:15:35.594 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Core startup complete
+[2023-09-13 19:15:35.729 +08:00] [INF] [17] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/data/movies"
+[2023-09-13 19:15:35.731 +08:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Executed all post-startup entry points in 0:00:00.1368986
+[2023-09-13 19:15:35.731 +08:00] [INF] [1] Main: Startup complete 0:00:04.3918989
+[2023-09-13 19:15:35.735 +08:00] [INF] [18] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/data/tvshows"
+[2023-09-13 19:15:36.654 +08:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"AccessSchedule"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 19:15:36.655 +08:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ActivityLog"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 19:15:36.655 +08:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"CustomItemDisplayPreferences"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 19:15:36.655 +08:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"DisplayPreferences"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 19:15:36.655 +08:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"HomeSection"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 19:15:36.655 +08:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ImageInfo"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 19:15:36.655 +08:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ItemDisplayPreferences"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 19:15:36.655 +08:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"Permission"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 19:15:36.655 +08:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"Preference"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 19:15:36.655 +08:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ApiKey"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 19:15:36.655 +08:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"Device"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 19:15:36.655 +08:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"DeviceOptions"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 19:15:36.655 +08:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"User"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-09-13 19:15:38.003 +08:00] [INF] [10] Emby.Server.Implementations.ScheduledTasks.TaskManager: "StartupTrigger" fired for task: "Update Plugins"
+[2023-09-13 19:15:38.004 +08:00] [INF] [10] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "PluginUpdateTask"
+[2023-09-13 19:15:38.006 +08:00] [INF] [21] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Update Plugins"
+[2023-09-13 19:15:39.061 +08:00] [INF] [10] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 1 seconds
+[2023-09-13 19:15:39.067 +08:00] [INF] [10] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-09-13 19:16:46.788 +08:00] [INF] [22] Emby.Server.Implementations.IO.LibraryMonitor: "movies" ("/data/movies") will be refreshed.
+[2023-09-13 19:29:52.546 +08:00] [INF] [27] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Clean Log Directory"
+[2023-09-13 19:29:52.546 +08:00] [INF] [3] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Clean Transcode Directory"
+[2023-09-13 19:29:52.548 +08:00] [INF] [27] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "DeleteLogFileTask"
+[2023-09-13 19:29:52.548 +08:00] [INF] [3] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "DeleteTranscodeFileTask"
+[2023-09-13 19:29:52.548 +08:00] [INF] [25] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Clean Log Directory"
+[2023-09-13 19:29:52.549 +08:00] [INF] [27] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Clean Transcode Directory"
+[2023-09-13 19:29:52.555 +08:00] [INF] [25] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Log Directory" Completed after 0 minute(s) and 0 seconds
+[2023-09-13 19:29:52.570 +08:00] [INF] [25] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-09-13 19:29:52.590 +08:00] [INF] [25] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Download missing subtitles"
+[2023-09-13 19:29:52.591 +08:00] [INF] [25] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "SubtitleScheduledTask"
+[2023-09-13 19:29:52.591 +08:00] [INF] [25] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Download missing subtitles"
+[2023-09-13 19:29:52.598 +08:00] [INF] [27] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Transcode Directory" Completed after 0 minute(s) and 0 seconds
+[2023-09-13 19:29:52.598 +08:00] [INF] [27] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-09-13 19:29:52.619 +08:00] [INF] [27] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Clean Cache Directory"
+[2023-09-13 19:29:52.619 +08:00] [INF] [27] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "DeleteCacheFileTask"
+[2023-09-13 19:29:52.619 +08:00] [INF] [27] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Clean Cache Directory"
+[2023-09-13 19:29:52.622 +08:00] [INF] [25] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Download missing subtitles" Completed after 0 minute(s) and 0 seconds
+[2023-09-13 19:29:52.622 +08:00] [INF] [25] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-09-13 19:29:52.641 +08:00] [INF] [25] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "TasksRefreshChannels"
+[2023-09-13 19:29:52.641 +08:00] [INF] [25] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "RefreshChannelsScheduledTask"
+[2023-09-13 19:29:52.642 +08:00] [INF] [25] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "TasksRefreshChannels"
+[2023-09-13 19:29:52.644 +08:00] [INF] [27] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Cache Directory" Completed after 0 minute(s) and 0 seconds
+[2023-09-13 19:29:52.644 +08:00] [INF] [27] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-09-13 19:29:52.666 +08:00] [INF] [25] Emby.Server.Implementations.ScheduledTasks.TaskManager: "TasksRefreshChannels" Completed after 0 minute(s) and 0 seconds
+[2023-09-13 19:29:52.666 +08:00] [INF] [25] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-09-13 19:29:52.684 +08:00] [INF] [25] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Optimize database"
+[2023-09-13 19:29:52.684 +08:00] [INF] [25] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "OptimizeDatabaseTask"
+[2023-09-13 19:29:52.684 +08:00] [INF] [25] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Optimize database"
+[2023-09-13 19:29:52.691 +08:00] [INF] [25] Emby.Server.Implementations.ScheduledTasks.Tasks.OptimizeDatabaseTask: Optimizing and vacuuming jellyfin.db...
+[2023-09-13 19:29:52.740 +08:00] [INF] [25] Emby.Server.Implementations.ScheduledTasks.Tasks.OptimizeDatabaseTask: jellyfin.db optimized successfully!
+[2023-09-13 19:29:52.740 +08:00] [INF] [25] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Optimize database" Completed after 0 minute(s) and 0 seconds
+[2023-09-13 19:29:52.740 +08:00] [INF] [25] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks

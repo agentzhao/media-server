@@ -1,0 +1,273 @@
+(N) 2023-09-11T17:40:31 - qBittorrent v4.5.5 started
+(N) 2023-09-11T17:40:31 - Using config directory: /config/qBittorrent
+(N) 2023-09-11T17:40:31 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2023-09-11T17:40:31 - Peer ID: "-qB4550-"
+(I) 2023-09-11T17:40:31 - HTTP User-Agent: "qBittorrent/4.5.5"
+(I) 2023-09-11T17:40:31 - Distributed Hash Table (DHT) support: ON
+(I) 2023-09-11T17:40:31 - Local Peer Discovery support: ON
+(I) 2023-09-11T17:40:31 - Peer Exchange (PeX) support: ON
+(I) 2023-09-11T17:40:31 - Anonymous mode: OFF
+(I) 2023-09-11T17:40:31 - Encryption support: ON
+(I) 2023-09-11T17:40:31 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2023-09-11T17:40:31 - Successfully listening on IP. IP: "127.0.0.1". Port: "UDP/6881"
+(I) 2023-09-11T17:40:31 - Successfully listening on IP. IP: "172.23.0.6". Port: "TCP/6881"
+(I) 2023-09-11T17:40:31 - Successfully listening on IP. IP: "172.23.0.6". Port: "UDP/6881"
+(W) 2023-09-11T17:40:31 - Couldn't load IP geolocation database. Reason: No such file or directory
+(N) 2023-09-11T17:40:31 - Using built-in Web UI.
+(W) 2023-09-11T17:40:31 - Couldn't load Web UI translation for selected locale (C).
+(N) 2023-09-11T17:40:31 - Web UI: Now listening on IP: *, port: 8080
+(I) 2023-09-11T17:40:31 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Fri Sep 1 08:13:34 2023.
+(I) 2023-09-11T17:40:31 - Successfully updated IP geolocation database.
+(I) 2023-09-11T17:40:31 - Detected external IP. IP: "112.199.187.117"
+(W) 2023-09-11T17:42:21 - WebAPI login failure. Reason: invalid credentials, attempt count: 1, IP: ::ffff:172.23.0.1, username: zhao
+(W) 2023-09-11T17:42:30 - WebAPI login failure. Reason: invalid credentials, attempt count: 2, IP: ::ffff:172.23.0.1, username: zhao
+(W) 2023-09-11T17:42:37 - WebAPI login failure. Reason: invalid credentials, attempt count: 3, IP: ::ffff:172.23.0.1, username: zhao
+(W) 2023-09-11T17:42:48 - WebAPI login failure. Reason: invalid credentials, attempt count: 4, IP: ::ffff:172.23.0.1, username: zhao
+(W) 2023-09-11T17:45:31 - WebAPI login failure. Reason: invalid credentials, attempt count: 5, IP: ::ffff:172.23.0.1, username: zhao
+(W) 2023-09-11T17:45:36 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.23.0.1, username: zhao
+(W) 2023-09-11T17:46:15 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.23.0.1, username: zhao
+(W) 2023-09-11T17:46:25 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.23.0.1, username: zhao
+(W) 2023-09-11T17:46:36 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.23.0.1, username: zhao
+(W) 2023-09-11T17:46:37 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.23.0.1, username: zhao
+(W) 2023-09-11T17:46:56 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.23.0.1, username: zhao
+(W) 2023-09-11T17:47:08 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.23.0.1, username: zhao
+(W) 2023-09-11T17:47:19 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.23.0.1, username: zhao
+(W) 2023-09-11T17:47:29 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.23.0.1, username: zhao
+(W) 2023-09-11T17:47:38 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.23.0.1, username: zhao
+(W) 2023-09-11T17:47:43 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.23.0.1, username: zhao
+(N) 2023-09-11T17:58:42 - qBittorrent termination initiated
+(I) 2023-09-11T17:58:42 - UPnP/NAT-PMP support: OFF
+(N) 2023-09-11T17:58:42 - qBittorrent is now ready to exit
+(N) 2023-09-11T17:58:53 - qBittorrent v4.5.5 started
+(N) 2023-09-11T17:58:53 - Using config directory: /config/qBittorrent
+(N) 2023-09-11T17:58:53 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2023-09-11T17:58:53 - Peer ID: "-qB4550-"
+(I) 2023-09-11T17:58:53 - HTTP User-Agent: "qBittorrent/4.5.5"
+(I) 2023-09-11T17:58:53 - Distributed Hash Table (DHT) support: ON
+(I) 2023-09-11T17:58:53 - Local Peer Discovery support: ON
+(I) 2023-09-11T17:58:53 - Peer Exchange (PeX) support: ON
+(I) 2023-09-11T17:58:53 - Anonymous mode: OFF
+(I) 2023-09-11T17:58:53 - Encryption support: ON
+(I) 2023-09-11T17:58:53 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2023-09-11T17:58:53 - Successfully listening on IP. IP: "127.0.0.1". Port: "UDP/6881"
+(I) 2023-09-11T17:58:53 - Successfully listening on IP. IP: "172.24.0.4". Port: "TCP/6881"
+(I) 2023-09-11T17:58:53 - Successfully listening on IP. IP: "172.24.0.4". Port: "UDP/6881"
+(I) 2023-09-11T17:58:53 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Fri Sep 1 08:13:34 2023.
+(N) 2023-09-11T17:58:53 - Using built-in Web UI.
+(W) 2023-09-11T17:58:53 - Couldn't load Web UI translation for selected locale (C).
+(N) 2023-09-11T17:58:53 - Web UI: Now listening on IP: *, port: 8080
+(I) 2023-09-11T17:58:53 - Detected external IP. IP: "112.199.187.117"
+(W) 2023-09-11T18:00:23 - WebAPI login failure. Reason: invalid credentials, attempt count: 1, IP: ::ffff:192.168.50.50, username: admin
+(N) 2023-09-11T18:00:26 - WebAPI login success. IP: ::ffff:192.168.50.50
+(W) 2023-09-11T18:00:53 - WebAPI login failure. Reason: invalid credentials, attempt count: 1, IP: ::ffff:172.24.0.1, username: zhao
+(W) 2023-09-11T18:01:13 - WebAPI login failure. Reason: invalid credentials, attempt count: 2, IP: ::ffff:172.24.0.1, username: zhao
+(N) 2023-09-11T18:01:42 - Web UI translation for selected locale (en) has been successfully loaded.
+(N) 2023-09-11T18:01:42 - Web UI: Now listening on IP: *, port: 8080
+(W) 2023-09-11T18:02:52 - WebAPI login failure. Reason: invalid credentials, attempt count: 3, IP: ::ffff:172.24.0.1, username: zhao
+(W) 2023-09-11T18:06:04 - WebAPI login failure. Reason: invalid credentials, attempt count: 4, IP: ::ffff:172.24.0.1, username: zhao
+(N) 2023-09-11T18:10:04 - qBittorrent termination initiated
+(I) 2023-09-11T18:10:04 - UPnP/NAT-PMP support: OFF
+(N) 2023-09-11T18:10:04 - qBittorrent is now ready to exit
+(N) 2023-09-11T18:12:32 - qBittorrent v4.5.5 started
+(N) 2023-09-11T18:12:32 - Using config directory: /config/qBittorrent
+(N) 2023-09-11T18:12:32 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2023-09-11T18:12:32 - Peer ID: "-qB4550-"
+(I) 2023-09-11T18:12:32 - HTTP User-Agent: "qBittorrent/4.5.5"
+(I) 2023-09-11T18:12:32 - Distributed Hash Table (DHT) support: ON
+(I) 2023-09-11T18:12:32 - Local Peer Discovery support: ON
+(I) 2023-09-11T18:12:32 - Peer Exchange (PeX) support: ON
+(I) 2023-09-11T18:12:32 - Anonymous mode: OFF
+(I) 2023-09-11T18:12:32 - Encryption support: ON
+(I) 2023-09-11T18:12:32 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2023-09-11T18:12:32 - Successfully listening on IP. IP: "127.0.0.1". Port: "UDP/6881"
+(I) 2023-09-11T18:12:32 - Successfully listening on IP. IP: "172.25.0.2". Port: "TCP/6881"
+(I) 2023-09-11T18:12:32 - Successfully listening on IP. IP: "172.25.0.2". Port: "UDP/6881"
+(I) 2023-09-11T18:12:32 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Fri Sep 1 08:13:34 2023.
+(N) 2023-09-11T18:12:32 - Using built-in Web UI.
+(N) 2023-09-11T18:12:32 - Web UI translation for selected locale (en) has been successfully loaded.
+(N) 2023-09-11T18:12:32 - Web UI: Now listening on IP: *, port: 8080
+(I) 2023-09-11T18:12:32 - Detected external IP. IP: "112.199.187.117"
+(N) 2023-09-11T18:14:20 - WebAPI login success. IP: ::ffff:172.25.0.1
+(W) 2023-09-11T18:15:30 - WebAPI login failure. Reason: invalid credentials, attempt count: 1, IP: ::ffff:172.25.0.1, username: zhao
+(W) 2023-09-11T18:15:49 - WebAPI login failure. Reason: invalid credentials, attempt count: 2, IP: ::ffff:172.25.0.1, username: zhao
+(W) 2023-09-11T18:17:41 - WebAPI login failure. Reason: invalid credentials, attempt count: 3, IP: ::ffff:172.25.0.1, username: zhao
+(W) 2023-09-11T18:17:53 - WebAPI login failure. Reason: invalid credentials, attempt count: 4, IP: ::ffff:172.25.0.1, username: zhao
+(W) 2023-09-11T18:18:47 - WebAPI login failure. Reason: invalid credentials, attempt count: 5, IP: ::ffff:172.25.0.1, username: zhao
+(W) 2023-09-11T18:18:58 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.25.0.1, username: zhao
+(W) 2023-09-11T18:20:50 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.25.0.1, username: admin
+(W) 2023-09-11T18:20:57 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.25.0.1, username: admin
+(W) 2023-09-11T18:21:27 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.25.0.1, username: admin
+(N) 2023-09-11T18:29:37 - qBittorrent termination initiated
+(I) 2023-09-11T18:29:37 - UPnP/NAT-PMP support: OFF
+(N) 2023-09-11T18:29:38 - qBittorrent is now ready to exit
+(N) 2023-09-11T18:29:49 - qBittorrent v4.5.5 started
+(N) 2023-09-11T18:29:49 - Using config directory: /config/qBittorrent
+(N) 2023-09-11T18:29:49 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2023-09-11T18:29:49 - Peer ID: "-qB4550-"
+(I) 2023-09-11T18:29:49 - HTTP User-Agent: "qBittorrent/4.5.5"
+(I) 2023-09-11T18:29:49 - Distributed Hash Table (DHT) support: ON
+(I) 2023-09-11T18:29:49 - Local Peer Discovery support: ON
+(I) 2023-09-11T18:29:49 - Peer Exchange (PeX) support: ON
+(I) 2023-09-11T18:29:49 - Anonymous mode: OFF
+(I) 2023-09-11T18:29:49 - Encryption support: ON
+(I) 2023-09-11T18:29:49 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2023-09-11T18:29:49 - Successfully listening on IP. IP: "127.0.0.1". Port: "UDP/6881"
+(I) 2023-09-11T18:29:49 - Successfully listening on IP. IP: "172.26.0.2". Port: "TCP/6881"
+(I) 2023-09-11T18:29:49 - Successfully listening on IP. IP: "172.26.0.2". Port: "UDP/6881"
+(I) 2023-09-11T18:29:49 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Fri Sep 1 08:13:34 2023.
+(N) 2023-09-11T18:29:49 - Using built-in Web UI.
+(N) 2023-09-11T18:29:49 - Web UI translation for selected locale (en) has been successfully loaded.
+(N) 2023-09-11T18:29:49 - Web UI: Now listening on IP: *, port: 8080
+(I) 2023-09-11T18:29:49 - Detected external IP. IP: "112.199.187.117"
+(W) 2023-09-11T18:29:50 - WebAPI login failure. Reason: invalid credentials, attempt count: 1, IP: ::ffff:172.26.0.1, username: zhao
+(W) 2023-09-11T18:29:51 - WebAPI login failure. Reason: invalid credentials, attempt count: 2, IP: ::ffff:172.26.0.1, username: zhao
+(N) 2023-09-11T18:29:52 - WebAPI login success. IP: ::ffff:172.26.0.1
+(W) 2023-09-11T18:29:58 - WebAPI login failure. Reason: invalid credentials, attempt count: 1, IP: ::ffff:172.26.0.1, username: zhao
+(W) 2023-09-11T18:30:02 - WebAPI login failure. Reason: invalid credentials, attempt count: 2, IP: ::ffff:172.26.0.1, username: zhao
+(W) 2023-09-11T18:30:14 - WebAPI login failure. Reason: invalid credentials, attempt count: 3, IP: ::ffff:172.26.0.1, username: zhao
+(N) 2023-09-11T18:30:33 - WebAPI login success. IP: ::ffff:172.26.0.1
+(N) 2023-09-12T17:13:25 - WebAPI login success. IP: ::ffff:172.26.0.1
+(N) 2023-09-12T17:15:08 - WebAPI login success. IP: ::ffff:172.26.0.1
+(N) 2023-09-13T18:05:12 - qBittorrent termination initiated
+(I) 2023-09-13T18:05:12 - UPnP/NAT-PMP support: OFF
+(N) 2023-09-13T18:05:13 - qBittorrent is now ready to exit
+(N) 2023-09-13T18:05:33 - qBittorrent v4.5.5 started
+(N) 2023-09-13T18:05:33 - Using config directory: /config/qBittorrent
+(N) 2023-09-13T18:05:33 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2023-09-13T18:05:33 - Peer ID: "-qB4550-"
+(I) 2023-09-13T18:05:33 - HTTP User-Agent: "qBittorrent/4.5.5"
+(I) 2023-09-13T18:05:33 - Distributed Hash Table (DHT) support: ON
+(I) 2023-09-13T18:05:33 - Local Peer Discovery support: ON
+(I) 2023-09-13T18:05:33 - Peer Exchange (PeX) support: ON
+(I) 2023-09-13T18:05:33 - Anonymous mode: OFF
+(I) 2023-09-13T18:05:33 - Encryption support: ON
+(I) 2023-09-13T18:05:33 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2023-09-13T18:05:33 - Successfully listening on IP. IP: "127.0.0.1". Port: "UDP/6881"
+(I) 2023-09-13T18:05:33 - Successfully listening on IP. IP: "172.26.0.6". Port: "TCP/6881"
+(I) 2023-09-13T18:05:33 - Successfully listening on IP. IP: "172.26.0.6". Port: "UDP/6881"
+(I) 2023-09-13T18:05:33 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Fri Sep 1 08:13:34 2023.
+(N) 2023-09-13T18:05:33 - Using built-in Web UI.
+(N) 2023-09-13T18:05:33 - Web UI translation for selected locale (en) has been successfully loaded.
+(N) 2023-09-13T18:05:33 - Web UI: Now listening on IP: *, port: 8080
+(I) 2023-09-13T18:05:33 - Detected external IP. IP: "112.199.187.117"
+(N) 2023-09-13T18:05:39 - WebAPI login success. IP: ::ffff:172.26.0.1
+(N) 2023-09-13T18:06:40 - WebAPI login success. IP: ::ffff:172.26.0.1
+(N) 2023-09-13T18:08:21 - qBittorrent v4.5.5 started
+(N) 2023-09-13T18:08:21 - Using config directory: /config/qBittorrent
+(N) 2023-09-13T18:08:21 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2023-09-13T18:08:21 - Peer ID: "-qB4550-"
+(I) 2023-09-13T18:08:21 - HTTP User-Agent: "qBittorrent/4.5.5"
+(I) 2023-09-13T18:08:21 - Distributed Hash Table (DHT) support: ON
+(I) 2023-09-13T18:08:21 - Local Peer Discovery support: ON
+(I) 2023-09-13T18:08:21 - Peer Exchange (PeX) support: ON
+(I) 2023-09-13T18:08:21 - Anonymous mode: OFF
+(I) 2023-09-13T18:08:21 - Encryption support: ON
+(I) 2023-09-13T18:08:21 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2023-09-13T18:08:21 - Successfully listening on IP. IP: "127.0.0.1". Port: "UDP/6881"
+(I) 2023-09-13T18:08:21 - Successfully listening on IP. IP: "172.26.0.5". Port: "TCP/6881"
+(I) 2023-09-13T18:08:21 - Successfully listening on IP. IP: "172.26.0.5". Port: "UDP/6881"
+(I) 2023-09-13T18:08:21 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Fri Sep 1 08:13:34 2023.
+(N) 2023-09-13T18:08:21 - Using built-in Web UI.
+(N) 2023-09-13T18:08:21 - Web UI translation for selected locale (en) has been successfully loaded.
+(N) 2023-09-13T18:08:21 - Web UI: Now listening on IP: *, port: 8080
+(I) 2023-09-13T18:08:21 - Detected external IP. IP: "112.199.187.117"
+(N) 2023-09-13T18:08:27 - WebAPI login success. IP: ::ffff:172.26.0.1
+(N) 2023-09-13T18:13:32 - WebAPI login success. IP: ::ffff:172.26.0.1
+(N) 2023-09-13T18:13:32 - Added new torrent. Torrent: "Oppenheimer (2023) 1080p V2 HDTS ENG x264 AAC.mkv"
+(W) 2023-09-13T18:13:34 - File error alert. Torrent: "Oppenheimer (2023) 1080p V2 HDTS ENG x264 AAC.mkv". File: "/downloads/Oppenheimer (2023) 1080p V2 HDTS ENG x264 AAC.mkv". Reason: "Oppenheimer (2023) 1080p V2 HDTS ENG x264 AAC.mkv mkdir (/downloads/Oppenheimer (2023) 1080p V2 HDTS ENG x264 AAC.mkv) error: Permission denied"
+(N) 2023-09-13T18:13:40 - WebAPI login success. IP: ::ffff:172.26.0.1
+(N) 2023-09-13T18:14:29 - Removed torrent and deleted its content. Torrent: "Oppenheimer (2023) 1080p V2 HDTS ENG x264 AAC.mkv"
+(N) 2023-09-13T18:14:58 - Added new torrent. Torrent: "Oppenheimer (2023) 1080p V2 HDTS ENG x264 AAC - HushRips.mkv"
+(W) 2023-09-13T18:15:03 - File error alert. Torrent: "Oppenheimer (2023) 1080p V2 HDTS ENG x264 AAC - HushRips.mkv". File: "/downloads/Oppenheimer (2023) 1080p V2 HDTS ENG x264 AAC - HushRips.mkv". Reason: "Oppenheimer (2023) 1080p V2 HDTS ENG x264 AAC - HushRips.mkv mkdir (/downloads/Oppenheimer (2023) 1080p V2 HDTS ENG x264 AAC - HushRips.mkv) error: Permission denied"
+(N) 2023-09-13T18:15:46 - Torrent paused. Torrent: "Oppenheimer (2023) 1080p V2 HDTS ENG x264 AAC - HushRips.mkv"
+(N) 2023-09-13T18:19:55 - Web UI: Now listening on IP: *, port: 8080
+(N) 2023-09-13T18:20:01 - Removed torrent and deleted its content. Torrent: "Oppenheimer (2023) 1080p V2 HDTS ENG x264 AAC - HushRips.mkv"
+(N) 2023-09-13T18:20:11 - Added new torrent. Torrent: "Oppenheimer (2023) 1080p V2 HDTS ENG x264 AAC - HushRips.mkv"
+(N) 2023-09-13T18:21:23 - Torrent download finished. Torrent: "Oppenheimer (2023) 1080p V2 HDTS ENG x264 AAC - HushRips.mkv"
+(N) 2023-09-13T18:21:43 - Removed torrent. Torrent: "Oppenheimer (2023) 1080p V2 HDTS ENG x264 AAC - HushRips.mkv"
+(N) 2023-09-13T18:29:41 - Added new torrent. Torrent: "Oppenheimer (2023) 1080p HD TS - AVC - AAC HINDI+ENGLISH - DUSIcTv-=TEAM TPB=-"
+(N) 2023-09-13T18:32:56 - Torrent download finished. Torrent: "Oppenheimer (2023) 1080p HD TS - AVC - AAC HINDI+ENGLISH - DUSIcTv-=TEAM TPB=-"
+(N) 2023-09-13T18:38:04 - qBittorrent termination initiated
+(I) 2023-09-13T18:38:04 - UPnP/NAT-PMP support: OFF
+(N) 2023-09-13T18:38:09 - qBittorrent is now ready to exit
+(N) 2023-09-13T18:38:26 - qBittorrent v4.5.5 started
+(N) 2023-09-13T18:38:26 - Using config directory: /config/qBittorrent
+(N) 2023-09-13T18:38:26 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2023-09-13T18:38:26 - Peer ID: "-qB4550-"
+(I) 2023-09-13T18:38:26 - HTTP User-Agent: "qBittorrent/4.5.5"
+(I) 2023-09-13T18:38:26 - Distributed Hash Table (DHT) support: ON
+(I) 2023-09-13T18:38:26 - Local Peer Discovery support: ON
+(I) 2023-09-13T18:38:26 - Peer Exchange (PeX) support: ON
+(I) 2023-09-13T18:38:26 - Anonymous mode: OFF
+(I) 2023-09-13T18:38:26 - Encryption support: ON
+(I) 2023-09-13T18:38:26 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2023-09-13T18:38:26 - Successfully listening on IP. IP: "127.0.0.1". Port: "UDP/6881"
+(I) 2023-09-13T18:38:26 - Successfully listening on IP. IP: "172.18.0.2". Port: "TCP/6881"
+(I) 2023-09-13T18:38:26 - Successfully listening on IP. IP: "172.18.0.2". Port: "UDP/6881"
+(N) 2023-09-13T18:38:26 - Restored torrent. Torrent: "Oppenheimer (2023) 1080p HD TS - AVC - AAC HINDI+ENGLISH - DUSIcTv-=TEAM TPB=-"
+(I) 2023-09-13T18:38:26 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Fri Sep 1 08:13:34 2023.
+(N) 2023-09-13T18:38:26 - Using built-in Web UI.
+(N) 2023-09-13T18:38:26 - Web UI translation for selected locale (en) has been successfully loaded.
+(N) 2023-09-13T18:38:26 - Web UI: Now listening on IP: *, port: 8080
+(I) 2023-09-13T18:38:26 - Detected external IP. IP: "112.199.187.117"
+(N) 2023-09-13T18:38:30 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-09-13T18:40:45 - qBittorrent termination initiated
+(I) 2023-09-13T18:40:45 - UPnP/NAT-PMP support: OFF
+(N) 2023-09-13T18:40:50 - qBittorrent is now ready to exit
+(N) 2023-09-13T18:41:40 - qBittorrent v4.5.5 started
+(N) 2023-09-13T18:41:40 - Using config directory: /config/qBittorrent
+(N) 2023-09-13T18:41:40 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2023-09-13T18:41:40 - Peer ID: "-qB4550-"
+(I) 2023-09-13T18:41:40 - HTTP User-Agent: "qBittorrent/4.5.5"
+(I) 2023-09-13T18:41:40 - Distributed Hash Table (DHT) support: ON
+(I) 2023-09-13T18:41:40 - Local Peer Discovery support: ON
+(I) 2023-09-13T18:41:40 - Peer Exchange (PeX) support: ON
+(I) 2023-09-13T18:41:40 - Anonymous mode: OFF
+(I) 2023-09-13T18:41:40 - Encryption support: ON
+(I) 2023-09-13T18:41:40 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2023-09-13T18:41:40 - Successfully listening on IP. IP: "127.0.0.1". Port: "UDP/6881"
+(I) 2023-09-13T18:41:40 - Successfully listening on IP. IP: "172.23.0.7". Port: "TCP/6881"
+(I) 2023-09-13T18:41:40 - Successfully listening on IP. IP: "172.23.0.7". Port: "UDP/6881"
+(N) 2023-09-13T18:41:40 - Restored torrent. Torrent: "Oppenheimer (2023) 1080p HD TS - AVC - AAC HINDI+ENGLISH - DUSIcTv-=TEAM TPB=-"
+(I) 2023-09-13T18:41:40 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Fri Sep 1 08:13:34 2023.
+(N) 2023-09-13T18:41:40 - Using built-in Web UI.
+(N) 2023-09-13T18:41:40 - Web UI translation for selected locale (en) has been successfully loaded.
+(N) 2023-09-13T18:41:40 - Web UI: Now listening on IP: *, port: 8080
+(I) 2023-09-13T18:41:40 - Detected external IP. IP: "112.199.187.117"
+(N) 2023-09-13T18:41:43 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2023-09-13T19:12:09 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2023-09-13T19:15:16 - qBittorrent termination initiated
+(I) 2023-09-13T19:15:16 - UPnP/NAT-PMP support: OFF
+(N) 2023-09-13T19:15:30 - qBittorrent v4.5.5 started
+(N) 2023-09-13T19:15:30 - Using config directory: /config/qBittorrent
+(N) 2023-09-13T19:15:30 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2023-09-13T19:15:30 - Peer ID: "-qB4550-"
+(I) 2023-09-13T19:15:30 - HTTP User-Agent: "qBittorrent/4.5.5"
+(I) 2023-09-13T19:15:30 - Distributed Hash Table (DHT) support: ON
+(I) 2023-09-13T19:15:30 - Local Peer Discovery support: ON
+(I) 2023-09-13T19:15:30 - Peer Exchange (PeX) support: ON
+(I) 2023-09-13T19:15:30 - Anonymous mode: OFF
+(I) 2023-09-13T19:15:30 - Encryption support: ON
+(I) 2023-09-13T19:15:30 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2023-09-13T19:15:30 - Successfully listening on IP. IP: "127.0.0.1". Port: "UDP/6881"
+(I) 2023-09-13T19:15:30 - Successfully listening on IP. IP: "172.24.0.4". Port: "TCP/6881"
+(I) 2023-09-13T19:15:30 - Successfully listening on IP. IP: "172.24.0.4". Port: "UDP/6881"
+(N) 2023-09-13T19:15:30 - Restored torrent. Torrent: "Oppenheimer (2023) 1080p HD TS - AVC - AAC HINDI+ENGLISH - DUSIcTv-=TEAM TPB=-"
+(I) 2023-09-13T19:15:30 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Fri Sep 1 08:13:34 2023.
+(N) 2023-09-13T19:15:30 - Using built-in Web UI.
+(N) 2023-09-13T19:15:30 - Web UI translation for selected locale (en) has been successfully loaded.
+(N) 2023-09-13T19:15:30 - Web UI: Now listening on IP: *, port: 8080
+(I) 2023-09-13T19:15:30 - Detected external IP. IP: "112.199.187.117"
+(N) 2023-09-13T19:15:33 - WebAPI login success. IP: ::ffff:172.24.0.1
+(N) 2023-09-13T19:15:36 - WebAPI login success. IP: ::ffff:172.24.0.1
+(N) 2023-09-13T19:16:23 - Added new torrent. Torrent: "Money Heist (2017) Season 01 S01 (1080p BluRay x265 HEVC 10bit FLAC 2.0 Qman) [UTR]"
+(N) 2023-09-13T19:16:34 - Added new torrent. Torrent: "La Casa De Papel S03 BoxSet 2019 1080p DUAL NF WEB-DL x264 AC3 5.1 - NTG [HdT]"
+(N) 2023-09-13T19:16:46 - Added new torrent. Torrent: "Money Heist (2017) Season 02 S02 (1080p NF WEB-DL x265 HEVC 10bit AC3 5.1 Qman) [UTR]"
+(N) 2023-09-13T19:18:07 - Added new torrent. Torrent: "The Wolf of Wall Street (2013) (2160p BluRay x265 HEVC 10bit HDR AAC 5.1 Tigole)"
+(N) 2023-09-13T19:19:06 - Removed torrent. Torrent: "Oppenheimer (2023) 1080p HD TS - AVC - AAC HINDI+ENGLISH - DUSIcTv-=TEAM TPB=-"
+(N) 2023-09-13T19:20:05 - Web UI: Now listening on IP: *, port: 8080
+(N) 2023-09-13T19:20:22 - Removed torrent and deleted its content. Torrent: "The Wolf of Wall Street (2013) (2160p BluRay x265 HEVC 10bit HDR AAC 5.1 Tigole)"
+(N) 2023-09-13T19:20:41 - WebAPI login success. IP: ::ffff:172.24.0.1
+(N) 2023-09-13T19:23:00 - Added new torrent. Torrent: "The Wolf of Wall Street (2013) [1080p]"
+(N) 2023-09-13T19:24:57 - Torrent download finished. Torrent: "The Wolf of Wall Street (2013) [1080p]"
+(N) 2023-09-13T19:25:43 - Removed torrent. Torrent: "The Wolf of Wall Street (2013) [1080p]"

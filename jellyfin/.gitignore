@@ -1,0 +1,10 @@
+/sonarr
+!/sonarr/.gitkeep
+/radarr
+!/radarr/.gitkeep
+/prowlarr
+!/prowlarr/.gitkeep
+/qbittorrent
+!/qbittorrent/.gitkeep
+/jellyfin
+!/jellyfin/.gitkeep
